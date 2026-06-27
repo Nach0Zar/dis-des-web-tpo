@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscar ofertas | UJIM Empleos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="jobs-page">
+    <header class="site-header">
+      <nav class="container-shell navbar navbar-expand-lg">
+        <a class="navbar-brand brand" href="index.html">UJIM Empleos</a>
+        <button class="hamburger-btn d-lg-none" type="button" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="d-none d-lg-flex mx-auto align-items-center gap-4 nav-center">
+          <a class="nav-link active" href="empleos.html">Buscar ofertas</a>
+          <a class="nav-link" href="#">Mis postulaciones</a>
+          <a class="nav-link" href="index.html#casos">Casos de éxito</a>
+          <a class="nav-link" href="#">FAQs</a>
+          <a class="nav-link" href="#">Info legal</a>
+        </div>
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <a class="btn btn-outline-ui" href="perfil.html">Mi perfil</a>
+          <a class="btn btn-danger-ui" href="index.html">Cerrar sesión</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-shell jobs-main">
+      <section class="search-hero">
+        <div>
+          <h1>Conecta talento, impulsa futuro</h1>
+          <p>Encontrá pasantías y primeras experiencias laborales seleccionadas para estudiantes y graduados de UJIM.</p>
+        </div>
+        <div class="search-panel">
+          <div class="search-box">
+            <span class="search-icon">⌕</span>
+            <input type="text" placeholder="Buscar por rol, empresa o tecnología">
+            <button class="btn btn-primary-ui" type="button">Buscar</button>
+          </div>
+          <div class="chip-row">
+            <span class="chip active">Todos</span>
+            <span class="chip">Pasante</span>
+            <span class="chip">Junior</span>
+            <span class="chip">Senior</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mobile-filter-block">
+        <h2>Filtros rápidos</h2>
+        <div class="chip-scroll">
+          <span class="chip active">Remoto</span>
+          <span class="chip">Híbrido</span>
+          <span class="chip">Presencial</span>
+          <span class="chip">Pasantía</span>
+        </div>
+        <button class="btn btn-outline-ui w-100" type="button">Más filtros</button>
+      </section>
+
+      <div class="jobs-layout">
+        <aside class="filters-card">
+          <h2>Filtros</h2>
+          <div class="filter-group">
+            <h3>Modalidad</h3>
+            <div class="chip-row">
+              <span class="chip active">Remoto</span>
+              <span class="chip muted">Híbrido</span>
+              <span class="chip muted">Presencial</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3>Área</h3>
+            <div class="chip-row">
+              <span class="chip active">Tecnología</span>
+              <span class="chip muted">Finanzas</span>
+              <span class="chip muted">Marketing</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3>Nivel de experiencia</h3>
+            <div class="chip-row">
+              <span class="chip active">Pasantía</span>
+              <span class="chip muted">Junior</span>
+              <span class="chip muted">Senior</span>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h3>Ubicación</h3>
+            <div class="chip-row">
+              <span class="chip active">CABA</span>
+              <span class="chip muted">Buenos Aires</span>
+              <span class="chip muted">Remoto LATAM</span>
+            </div>
+          </div>
+          <div class="d-flex gap-3 pt-2">
+            <button class="btn btn-primary-ui" type="button">Aplicar</button>
+            <button class="btn btn-outline-ui" type="button">Limpiar</button>
+          </div>
+        </aside>
+
+        <section class="results-section">
+          <h2>Ofertas destacadas</h2>
+          <p>Resultados con información clave visible para decidir rápido.</p>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <article class="job-card accent-blue">
+                <span class="company">TechFor SA</span>
+                <h3>Pasantía Frontend</h3>
+                <p>CABA / Remoto • Remoto</p>
+                <div class="job-actions">
+                  <span class="skill-tag">HTML + CSS</span>
+                  <a class="btn btn-primary-ui btn-sm" href="#">Ver oferta</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="job-card accent-teal">
+                <span class="company">FinGroup</span>
+                <h3>Analista Jr. Finanzas</h3>
+                <p>CABA • Híbrido</p>
+                <div class="job-actions">
+                  <span class="skill-tag">Excel</span>
+                  <a class="btn btn-primary-ui btn-sm" href="#">Ver oferta</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="job-card accent-orange">
+                <span class="company">DataSoft</span>
+                <h3>Soporte IT Jr.</h3>
+                <p>Buenos Aires • Presencial</p>
+                <div class="job-actions">
+                  <span class="skill-tag">Mesa de ayuda</span>
+                  <a class="btn btn-primary-ui btn-sm" href="#">Ver oferta</a>
+                </div>
+              </article>
+            </div>
+            <div class="col-lg-6">
+              <article class="job-card accent-gray">
+                <span class="company">Market Hub</span>
+                <h3>Asistente Marketing</h3>
+                <p>CABA • Híbrido</p>
+                <div class="job-actions">
+                  <span class="skill-tag">Redes</span>
+                  <a class="btn btn-primary-ui btn-sm" href="#">Ver oferta</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer-ui">
+      <div class="container-shell">
+        <strong>UJIM Empleos</strong>
+        <p>Conecta talento, impulsa futuro</p>
+      </div>
+    </footer>
+  </body>
+</html>
