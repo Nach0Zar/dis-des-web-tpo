@@ -44,11 +44,11 @@
             <p class="mb-0 text-primary">Encontrá pasantías y primeras experiencias laborales seleccionadas para estudiantes y graduados de UJIM.</p>
           </div>
           <div class="col-lg-6">
-            <form class="w-100 ms-lg-auto">
+            <form class="w-100 ms-lg-auto" data-job-search-form>
               <div class="input-group bg-white p-3 rounded-4 shadow-sm">
                 <span class="rounded-circle d-inline-flex align-items-center justify-content-center me-2 bg-body-tertiary border text-primary p-2"><i class="bi bi-search px-2"></i></span>
-                <input class="form-control border-0 rounded-3 shadow-none" type="search" placeholder="Buscar por rol, empresa o tecnología">
-                <button class="btn btn-primary d-none d-lg-inline-flex" type="button">Buscar</button>
+                <input class="form-control border-0 rounded-3 shadow-none" id="jobSearchInput" type="search" placeholder="Buscar por rol, empresa o tecnología" aria-label="Buscar ofertas" data-job-search-input>
+                <button class="btn btn-primary d-none d-lg-inline-flex" type="submit">Buscar</button>
               </div>
               <div class="d-none d-lg-flex gap-2 mt-3">
                 <span class="badge rounded-pill text-primary bg-white border border-primary-subtle px-3 py-2 fw-bold">Remoto</span>
@@ -99,9 +99,9 @@
 
         <section class="col-lg-9">
           <h2 class="h3">Ofertas destacadas</h2>
-          <p class="text-body-secondary">Resultados con información clave visible para decidir rápido.</p>
-          <div class="row g-4">
-            <div class="col-lg-6">
+          <p class="text-body-secondary" data-job-results-summary>Resultados con información clave visible para decidir rápido.</p>
+          <div class="row g-4" data-job-results>
+            <div class="col-lg-6" data-job-card>
               <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-blue">
                 <span class="small text-body-secondary">TechFor SA</span>
                 <h3 class="h5 fw-bold text-primary">Pasantía Frontend</h3>
@@ -112,7 +112,7 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-job-card>
               <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-teal">
                 <span class="small text-body-secondary">FinGroup</span>
                 <h3 class="h5 fw-bold text-primary">Analista Jr. Finanzas</h3>
@@ -123,7 +123,7 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-job-card>
               <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-orange">
                 <span class="small text-body-secondary">DataSoft</span>
                 <h3 class="h5 fw-bold text-primary">Soporte IT Jr.</h3>
@@ -134,7 +134,7 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-job-card>
               <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-gray">
                 <span class="small text-body-secondary">Market Hub</span>
                 <h3 class="h5 fw-bold text-primary">Asistente Marketing</h3>
@@ -145,6 +145,9 @@
                 </div>
               </section>
             </div>
+          </div>
+          <div class="alert alert-primary border-primary-subtle rounded-4 mt-4 d-none" role="status" data-job-empty>
+            No encontramos ofertas para esa búsqueda. Probá con otro rol, empresa, modalidad o tecnología.
           </div>
         </section>
       </div>
