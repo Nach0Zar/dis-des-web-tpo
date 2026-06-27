@@ -10,89 +10,144 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body class="landing-page">
     <header class="site-header">
       <nav class="container-shell navbar navbar-expand-lg">
         <a class="navbar-brand brand" href="index.html">UJIM Empleos</a>
         <button class="hamburger-btn d-lg-none" type="button" aria-label="Abrir menú">
           <span></span><span></span><span></span>
         </button>
-        <div class="d-none d-lg-flex ms-auto align-items-center gap-3">
-          <a class="nav-link" href="#oportunidades">Oportunidades</a>
-          <a class="nav-link" href="#casos">Casos de éxito</a>
-          <a class="nav-link" href="#contacto">Contacto</a>
+        <div class="d-none d-lg-flex ms-auto">
           <a class="btn btn-primary-ui" href="empleos.html">Ingresar</a>
         </div>
       </nav>
     </header>
-
+ 
     <main>
-      <section class="landing-hero">
+      <section class="landing-hero text-white">
         <div class="container-shell">
-          <div class="row align-items-center gy-5">
-            <div class="col-lg-7">
-              <p class="eyebrow">Portal de empleo universitario</p>
-              <h1>Conecta talento, impulsa futuro</h1>
-              <p class="hero-copy">Un espacio para vincular estudiantes y graduados de UJIM con oportunidades laborales reales, curadas y alineadas a su formación.</p>
-              <a class="btn btn-primary-ui btn-lg" href="empleos.html">Ver oportunidades</a>
+          <div class="row gx-0 gy-5 gx-lg-5 align-items-start">
+            <div class="col-lg-6">
+              <p class="d-block mb-3 fw-bold text-white small">Bolsa de empleo universitaria</p>
+              <h1 class="mb-0 text-white">Conecta talento,<br> impulsa futuro</h1>
+              <p class="hero-copy">
+                <span class="d-none d-lg-inline">Un portal institucional para que estudiantes y graduados de UJIM encuentren pasantías, primeras experiencias y oportunidades laborales verificadas.</span>
+                <span class="d-lg-none">Encontrá pasantías y primeras experiencias verificadas por UJIM.</span>
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <a class="btn btn-hero-primary" href="empleos.html">Buscar ofertas</a>
+                <a class="btn btn-hero-secondary d-none d-lg-inline-flex" href="#contacto">Contactarnos</a>
+              </div>
             </div>
-            <div class="col-lg-5">
-              <div class="hero-card">
-                <h2>Ofertas destacadas</h2>
-                <p>Pasantías, roles junior y primeras experiencias profesionales.</p>
-                <ul class="offer-list">
-                  <li>Frontend Trainee</li>
-                  <li>Analista Jr. Finanzas</li>
-                  <li>Soporte IT Jr.</li>
-                </ul>
+
+            <div class="col-lg-5 offset-lg-1">
+              <aside class="card hero-preview ms-lg-auto" aria-label="Ofertas destacadas">
+                <div class="card-body">
+                  <h2 class="card-title mb-1">Ofertas destacadas</h2>
+                  <p class="preview-copy d-none d-lg-block mb-4">Información clara para decidir rápido</p>
+                  <div class="d-grid gap-3">
+                    <article class="mini-offer accent-blue d-lg-flex align-items-center justify-content-between gap-3">
+                      <div>
+                        <span class="company d-none d-lg-block">TechFor SA</span>
+                        <h3 class="d-none d-lg-block">Pasantía Frontend</h3>
+                        <p class="mini-offer-meta d-none d-lg-block">Remoto · CABA</p>
+                        <p class="d-lg-none mb-0 fw-semibold small text-body">Pasantía Frontend · Remoto</p>
+                      </div>
+                      <span class="badge rounded-pill mini-tag d-none d-lg-inline-flex">Remoto</span>
+                    </article>
+                    <article class="mini-offer accent-teal d-lg-flex align-items-center justify-content-between gap-3">
+                      <div>
+                        <span class="company d-none d-lg-block">FinGroup</span>
+                        <h3 class="d-none d-lg-block">Analista Jr. Finanzas</h3>
+                        <p class="mini-offer-meta d-none d-lg-block">Híbrido · CABA</p>
+                        <p class="d-lg-none mb-0 fw-semibold small text-body">Analista Jr. Finanzas · Híbrido</p>
+                      </div>
+                      <span class="badge rounded-pill mini-tag d-none d-lg-inline-flex">Híbrido</span>
+                    </article>
+                    <article class="mini-offer accent-orange d-lg-flex align-items-center justify-content-between gap-3">
+                      <div>
+                        <span class="company d-none d-lg-block">DataSoft</span>
+                        <h3 class="d-none d-lg-block">Soporte IT Jr.</h3>
+                        <p class="mini-offer-meta d-none d-lg-block">Presencial · Buenos Aires</p>
+                        <p class="d-lg-none mb-0 fw-semibold small text-body">Soporte IT Jr. · Presencial</p>
+                      </div>
+                      <span class="badge rounded-pill mini-tag d-none d-lg-inline-flex">IT</span>
+                    </article>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="success-section" id="casos">
+        <div class="container-shell">
+          <div class="success-strip card border-0">
+            <div class="card-body">
+              <div class="row gx-0 gy-4 gx-lg-4 align-items-center">
+                <div class="col-lg-4">
+                  <h2 class="mb-2">
+                    <span class="d-none d-lg-inline">Indicadores de éxito del portal</span>
+                    <span class="d-lg-none">Indicadores de éxito</span>
+                  </h2>
+                  <p class="d-none d-lg-block mb-0">Métricas objetivo para evaluar adopción, eficiencia y confianza en la experiencia.</p>
+                </div>
+                <div class="col-lg-8">
+                  <div class="row gx-0 gy-3 gx-lg-4">
+                    <div class="col-lg-4">
+                      <article class="success-card h-100 d-flex d-lg-block align-items-center gap-3">
+                        <strong>+20%</strong>
+                        <div>
+                          <span>Postulaciones activas</span>
+                          <p class="d-none d-lg-block">Meta de incremento en postulaciones</p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-lg-4">
+                      <article class="success-card h-100 d-flex d-lg-block align-items-center gap-3">
+                        <strong>-35%</strong>
+                        <div>
+                          <span>Tiempo de búsqueda</span>
+                          <p class="d-none d-lg-block">Menos fricción para encontrar ofertas</p>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="col-lg-4">
+                      <article class="success-card h-100 d-flex d-lg-block align-items-center gap-3">
+                        <strong>80%</strong>
+                        <div>
+                          <span>Satisfacción UX</span>
+                          <p class="d-none d-lg-block">Percepción clara, moderna y confiable</p>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="stats-section" id="casos">
+      <section class="cta-band bg-white" id="oportunidades">
         <div class="container-shell">
-          <div class="row g-4">
-            <div class="col-md-4">
-              <article class="stat-card">
-                <strong>+120</strong>
-                <span>Convenios activos</span>
-                <p>Empresas y organizaciones vinculadas a la comunidad UJIM.</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="stat-card">
-                <strong>84%</strong>
-                <span>Primer empleo</span>
-                <p>Postulantes que encuentran una oportunidad inicial relevante.</p>
-              </article>
-            </div>
-            <div class="col-md-4">
-              <article class="stat-card">
-                <strong>48 h</strong>
-                <span>Respuesta promedio</span>
-                <p>Seguimiento simple para estudiantes, graduados y empresas.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta-band" id="oportunidades">
-        <div class="container-shell">
-          <div class="row align-items-center gy-4">
+          <div class="row gx-0 gy-5 gx-lg-5 align-items-start">
             <div class="col-lg-7">
               <p class="section-pill">Call to action</p>
-              <h2>Encontrá el próximo paso de tu carrera profesional</h2>
-              <p>Explorá ofertas filtradas por modalidad, área, experiencia y ubicación.</p>
+              <h2 class="mb-0">
+                <span class="d-none d-lg-inline">Empezá tu búsqueda profesional con el respaldo de UJIM</span>
+                <span class="d-lg-none">Empezá tu búsqueda con respaldo UJIM</span>
+              </h2>
+              <p class="cta-copy mb-0">Ingresá con tu correo institucional y encontrá oportunidades pensadas para tu carrera, tu disponibilidad y tus primeros pasos en el mundo laboral.</p>
+              <a class="btn btn-primary-ui d-inline-flex d-lg-none mt-3" href="empleos.html">Iniciar sesión</a>
             </div>
-            <div class="col-lg-4 offset-lg-1">
-              <div class="cta-card">
-                <h3>Ya podés postularte</h3>
-                <p>Ingresá al portal para consultar oportunidades destacadas.</p>
-                <a class="btn btn-primary-ui" href="empleos.html">Buscar ofertas</a>
-              </div>
+            <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
+              <aside class="cta-card">
+                <h3>Acceso institucional</h3>
+                <p>Disponible para estudiantes y graduados con mail @ujim.edu.ar.</p>
+                <a class="btn btn-primary-ui" href="empleos.html">Iniciar sesión</a>
+              </aside>
             </div>
           </div>
         </div>
@@ -100,20 +155,31 @@
 
       <section class="about-section">
         <div class="container-shell">
-          <div class="row gy-4 align-items-center">
-            <div class="col-lg-5">
-              <p class="section-pill">Sobre UJIM</p>
-              <h2>Un puente entre formación académica y desarrollo profesional.</h2>
+          <div class="row gx-0 gy-4 gx-lg-4 align-items-start">
+            <div class="col-lg-5 offset-lg-1">
+              <p class="section-pill">About us</p>
+              <h2 class="mb-0">
+                <span class="d-none d-lg-inline">Una universidad que conecta formación académica con futuro profesional</span>
+                <span class="d-lg-none">UJIM y el futuro profesional</span>
+              </h2>
               <div class="logo-panel">
-                <div class="seal">UJIM</div>
-                <p>Universidad Juan Ignacio Maza</p>
+                <div class="ujim-logo-mark mx-auto" aria-hidden="true">
+                  <span class="university-seal">U</span>
+                  <strong>UJIM</strong>
+                  <small>Innovar para transformar</small>
+                </div>
+                <p class="d-none d-lg-block mb-0">Universidad Jóvenes Innovadores del Mundo</p>
               </div>
             </div>
-            <div class="col-lg-6 offset-lg-1">
-              <div class="history-panel">
-                <h3>Historia y propósito</h3>
-                <p>El portal acompaña a estudiantes y graduados en su inserción laboral mediante ofertas seleccionadas, comunicación clara y herramientas simples para gestionar postulaciones.</p>
-              </div>
+            <div class="col-lg-6">
+              <article class="history-panel">
+                <h3 class="d-none d-lg-block">Historia y propósito institucional</h3>
+                <div class="d-none d-lg-block">
+                  <p>UJIM acompaña la trayectoria académica y profesional de sus estudiantes desde una mirada práctica, moderna y cercana al mercado laboral. El portal de empleos fortalece ese vínculo al centralizar oportunidades, pasantías y contactos con empresas en un entorno institucional confiable.</p>
+                  <p>La bolsa de empleo busca transformar la experiencia laboral inicial en un proceso más claro, accesible y organizado para toda la comunidad universitaria.</p>
+                </div>
+                <p class="d-lg-none mb-0">UJIM acompaña la trayectoria académica y profesional con oportunidades, pasantías y vínculos con empresas en un entorno institucional confiable.</p>
+              </article>
             </div>
           </div>
         </div>
@@ -121,40 +187,48 @@
 
       <section class="contact-section" id="contacto">
         <div class="container-shell">
-          <div class="row gy-4">
+          <div class="row gx-0 gy-5 gx-lg-5 align-items-start">
             <div class="col-lg-5">
-              <p class="section-pill">Contactarnos</p>
-              <h2>¿Tenés dudas sobre el portal?</h2>
-              <p>Escribinos para recibir asistencia sobre postulaciones, convenios o carga de ofertas.</p>
-              <div class="info-card">
-                <h3>Atención institucional</h3>
-                <p>El equipo de empleabilidad responde consultas de estudiantes, graduados y empresas.</p>
-                <a href="mailto:empleos@ujim.edu.ar">empleos@ujim.edu.ar</a>
+              <p class="section-pill">Contactanos</p>
+              <h2 class="mb-0">
+                <span class="d-none d-lg-inline">¿Tenés consultas sobre el portal?</span>
+                <span class="d-lg-none">Envianos tu consulta</span>
+              </h2>
+              <p class="contact-intro d-none d-lg-block">Completá el formulario y el área de Desarrollo Profesional responderá tu consulta por mail.</p>
+              <div class="info-card d-none d-lg-block">
+                <h3>Canal institucional</h3>
+                <p>Para consultas de acceso, recuperación de cuenta, ofertas publicadas o seguimiento de postulaciones.</p>
+                <a href="mailto:desarrollo.profesional@ujim.edu.ar">desarrollo.profesional@ujim.edu.ar</a>
               </div>
             </div>
             <div class="col-lg-6 offset-lg-1">
-              <form class="form-card">
-                <h3>Enviar consulta</h3>
+              <form class="form-card contact-form">
+                <h3 class="d-none d-lg-block">Enviar consulta</h3>
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label">Nombre y apellido</label>
-                    <input class="form-control" type="text" placeholder="Tu nombre">
+                    <label class="form-label mt-0">Nombre y apellido</label>
+                    <input class="form-control" type="text" placeholder="Tu nombre completo">
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label">Correo institucional</label>
-                    <input class="form-control" type="email" placeholder="usuario@ujim.edu.ar">
+                    <label class="form-label mt-0">Correo institucional</label>
+                    <input class="form-control" type="email" placeholder="nombre.apellido@ujim.edu.ar">
                   </div>
                   <div class="col-12">
-                    <label class="form-label">Asunto</label>
-                    <input class="form-control" type="text" placeholder="Motivo de consulta">
+                    <label class="form-label mt-0">Asunto</label>
+                    <input class="form-control" type="text" placeholder="Ej: No puedo acceder al portal">
                   </div>
                   <div class="col-12">
-                    <label class="form-label">Mensaje</label>
-                    <textarea class="form-control" rows="4" placeholder="Escribí tu mensaje"></textarea>
+                    <label class="form-label mt-0">Mensaje</label>
+                    <textarea class="form-control" rows="4" placeholder="Escribí tu consulta..."></textarea>
                   </div>
                 </div>
-                <button class="btn btn-primary-ui mt-4" type="button">Enviar consulta</button>
-                <span class="form-helper">Respuesta dentro de las próximas 48 h.</span>
+                <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mt-4">
+                  <button class="btn btn-primary-ui contact-submit" type="button">
+                    <span class="d-none d-lg-inline">Enviar consulta</span>
+                    <span class="d-lg-none">Enviar</span>
+                  </button>
+                  <span class="form-helper d-none d-lg-inline">Responderemos al mail institucional indicado.</span>
+                </div>
               </form>
             </div>
           </div>
