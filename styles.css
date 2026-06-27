@@ -16,7 +16,6 @@
   --ujim-muted: #6d6d6d;
   --ujim-teal: #0f766e;
   --ujim-orange: #d97706;
-  --ujim-shadow: 0 12px 18px rgba(0, 0, 0, 0.10);
 }
 
 * {
@@ -44,6 +43,10 @@ h3,
 
 a {
   text-decoration: none;
+}
+
+.text-white {
+  color: #fff !important;
 }
 
 .btn {
@@ -80,33 +83,17 @@ a {
   --bs-btn-hover-border-color: #b42318;
 }
 
-.navbar {
-  min-height: 80px;
-}
-
-.navbar-brand {
-  font-size: 22px;
-}
 
 .navbar-toggler {
-  width: 44px;
-  height: 44px;
   border-color: var(--ujim-border);
-  border-radius: 12px;
 }
 
 .nav-link {
   color: var(--ujim-body);
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .nav-link.active {
   color: var(--ujim-blue);
-}
-
-.nav-indicator {
-  border-bottom: 4px solid var(--ujim-blue);
 }
 
 .footer-ui {
@@ -144,25 +131,8 @@ a {
   font-weight: 600;
 }
 
-.form-text,
-.text-muted-ui {
+.form-text {
   color: var(--ujim-muted) !important;
-}
-
-.job-card {
-  position: relative;
-  overflow: hidden;
-  background: var(--ujim-bg);
-  border: 1px solid var(--ujim-border);
-  border-radius: 16px;
-}
-
-.job-card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 6px;
-  background: var(--accent, var(--ujim-blue));
 }
 
 .accent-strip {
@@ -197,100 +167,35 @@ a {
   margin-top: -60px;
 }
 
-.soft-card {
-  border: 1px solid var(--ujim-border);
-  border-radius: 24px;
-  background: #fff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
 .blue-card {
   background: var(--ujim-soft);
   border-color: var(--ujim-border-strong);
 }
 
-.search-hero {
-  min-height: 280px;
-  margin-top: 44px;
-  padding: 48px 56px;
-  border-radius: 28px;
-  background: var(--ujim-soft);
-  box-shadow: var(--ujim-shadow);
+.avatar-68 {
+  flex: 0 0 68px;
+  width: 68px;
+  height: 68px;
 }
 
-.search-hero h1 {
-  max-width: 560px;
-  font-size: 48px;
-  line-height: 1.18;
+.avatar-56 {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
 }
 
-.search-panel {
-  max-width: 560px;
+.ujim-accordion {
+  --bs-accordion-active-bg: #fff;
+  --bs-accordion-active-color: var(--ujim-blue);
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-border-color: var(--ujim-border);
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1.125rem;
 }
 
-.search-icon {
-  width: 36px;
-  height: 36px;
-  color: var(--ujim-blue);
-  background: var(--ujim-bg);
-  border: 1px solid var(--ujim-border);
-}
-
-.chip {
-  display: inline-flex;
-  min-height: 36px;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 18px;
-  color: var(--ujim-blue);
-  background: #fff;
-  border: 1px solid var(--ujim-border);
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.chip.active {
-  color: #fff;
-  background: var(--ujim-blue);
-  border-color: var(--ujim-blue);
-}
-
-.chip.soft {
-  color: var(--ujim-blue);
-  background: var(--ujim-soft);
-  border-color: var(--ujim-border-strong);
-}
-
-.filters-card {
-  min-height: 695px;
-}
-
-.job-card {
-  min-height: 176px;
-  padding: 18px 22px 22px 28px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.job-card h3 {
-  color: var(--ujim-blue);
-  font-size: 18px;
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  color: #fff;
-  background: var(--ujim-blue);
-  border-radius: 50%;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.profile-hero {
-  margin: 44px 0 30px;
+.ujim-accordion .accordion-body {
+  color: var(--ujim-body);
+  font-size: 14px;
 }
 
 .auth-brand {
@@ -393,36 +298,6 @@ a {
 }
 
 @media (max-width: 991.98px) {
-  .navbar {
-    min-height: 76px;
-  }
-
-  .navbar-brand {
-    font-size: 20px;
-  }
-
-  .hero-overlap {
-    margin-top: -15px;
-  }
-
-  .search-hero {
-    min-height: 232px;
-    margin-top: 36px;
-    padding: 28px 24px 24px;
-  }
-
-  .search-hero h1 {
-    font-size: 34px;
-  }
-
-  .chip-scroll {
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .filters-card {
-    min-height: auto;
-  }
 
   .auth-brand {
     flex: 0 0 100%;
@@ -478,7 +353,4 @@ a {
     --bs-gutter-x: 40px;
   }
 
-  .job-card {
-    width: 100%;
-  }
 }

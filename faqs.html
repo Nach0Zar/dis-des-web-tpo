@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAQs | UJIM Empleos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="bg-white border-bottom">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">UJIM Empleos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#faqNav" aria-controls="faqNav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="faqNav">
+            <div class="navbar-nav mx-xl-auto gap-xl-2 py-3 py-xl-0">
+              <a class="nav-link" href="empleos.html">Buscar ofertas</a>
+              <a class="nav-link" href="#">Mis postulaciones</a>
+              <a class="nav-link" href="casos-exito.html">Casos de éxito</a>
+              <a class="nav-link active border-bottom border-4 border-primary fw-bold" aria-current="page" href="faqs.html">FAQs</a>
+              <a class="nav-link" href="info-legal.html">Info legal</a>
+            </div>
+            <div class="d-grid d-xl-flex gap-2">
+              <a class="btn btn-outline-primary" href="perfil.html">Mi perfil</a>
+              <a class="btn btn-outline-danger" href="index.html">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container pb-5">
+      <section class="pt-4 pt-lg-5 mb-4">
+        <h1 class="display-5 fw-bolder lh-sm mb-2">Preguntas frecuentes</h1>
+        <p class="lead mb-4">
+          <span class="d-none d-lg-inline">Encontrá respuestas sobre postulaciones, CV, empresas y seguimiento de oportunidades.</span>
+          <span class="d-lg-none">Respuestas rápidas sobre el uso del portal.</span>
+        </p>
+        <form class="col-lg-6" role="search">
+          <div class="input-group bg-white border rounded-4 shadow-sm overflow-hidden">
+            <span class="input-group-text bg-white border-0 text-primary fw-bold">Buscar</span>
+            <input class="form-control border-0 shadow-none" type="search" placeholder="Buscar una pregunta..." aria-label="Buscar una pregunta">
+          </div>
+        </form>
+      </section>
+
+      <div class="row g-4 align-items-start">
+        <aside class="col-lg-3 d-none d-lg-block">
+          <section class="card border rounded-4 shadow-sm bg-white">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-4">Categorías</h2>
+              <div class="d-grid gap-3">
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">Cuenta y acceso</button>
+                <button class="btn btn-sm rounded-pill btn-primary" type="button">Postulaciones</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">CV y perfil</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">Empresas y ofertas</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">Soporte</button>
+              </div>
+            </div>
+          </section>
+        </aside>
+
+        <section class="col-lg-9">
+          <div class="row g-2 d-lg-none mb-4">
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-primary w-100" type="button">Postulaciones</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button">CV y perfil</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button">Empresas</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button">Soporte</button></div>
+          </div>
+
+          <div class="accordion ujim-accordion" id="faqAccordion">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                  ¿Quiénes pueden usar el portal?
+                </button>
+              </h2>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body pt-0">
+                  Estudiantes y graduados con cuenta institucional pueden acceder a oportunidades publicadas por empresas vinculadas a UJIM.
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="true" aria-controls="faqTwo">
+                  ¿Cómo me postulo a una oferta?
+                </button>
+              </h2>
+              <div id="faqTwo" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body pt-0">
+                  Ingresá al detalle de la oferta, revisá los requisitos y presioná Postularme. Se enviará tu CV principal cargado en el perfil.
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  ¿Puedo editar mi CV después de postularme?
+                </button>
+              </h2>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body pt-0">
+                  Sí. Podés actualizar tu CV desde Mi perfil. Las nuevas postulaciones usarán la versión principal vigente al momento de enviarlas.
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
+                  ¿Dónde veo el estado de mis postulaciones?
+                </button>
+              </h2>
+              <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body pt-0">
+                  En la sección Mis postulaciones podés revisar si una oferta está enviada, en revisión, avanzada o cerrada.
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
+                  ¿Cómo doy de baja una postulación?
+                </button>
+              </h2>
+              <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body pt-0">
+                  Desde el detalle de la postulación podés solicitar la baja mientras el proceso no haya sido cerrado por la empresa.
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">
+                  ¿Cómo contacto a soporte?
+                </button>
+              </h2>
+              <div id="faqSix" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body pt-0">
+                  Escribí a desarrollo.profesional@ujim.edu.ar con tu nombre, correo institucional y una descripción breve del inconveniente.
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-primary text-white py-4 py-lg-5">
+      <div class="container">
+        <strong class="d-block fw-bold fs-5 lh-sm">UJIM Empleos</strong>
+        <p class="small mb-0 mt-2">Conecta talento, impulsa futuro</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
