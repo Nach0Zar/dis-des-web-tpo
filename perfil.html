@@ -6,50 +6,98 @@
     <title>Mi perfil | UJIM Empleos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="bg-white border-bottom">
-      <nav class="navbar navbar-expand-lg container">
-        <a class="navbar-brand" href="index.html">UJIM Empleos</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#profileNav" aria-controls="profileNav" aria-expanded="false" aria-label="Abrir menú">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="profileNav">
-          <div class="navbar-nav ms-lg-auto gap-lg-3 py-3 py-lg-0">
-            <a class="nav-link" href="empleos.html">Buscar ofertas</a>
-            <a class="nav-link active" href="perfil.html">Mi perfil</a>
-            <a class="btn btn-outline-danger" href="index.html">Cerrar sesión</a>
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">UJIM Empleos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#profileNav" aria-controls="profileNav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="profileNav">
+            <div class="navbar-nav mx-xl-auto gap-xl-2 py-3 py-xl-0">
+              <a class="nav-link" href="empleos.html">Buscar ofertas</a>
+              <a class="nav-link" href="#">Mis postulaciones</a>
+              <a class="nav-link" href="casos-exito.html">Casos de éxito</a>
+              <a class="nav-link" href="faqs.html">FAQs</a>
+              <a class="nav-link" href="info-legal.html">Info legal</a>
+            </div>
+            <div class="d-grid d-xl-flex gap-2">
+              <a class="btn btn-outline-primary" href="perfil.html">Mi perfil</a>
+              <a class="btn btn-outline-danger" href="index.html">Cerrar sesión</a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
     <main class="container pb-5">
-      <section class="profile-hero card soft-card">
-        <div class="card-body p-4 d-lg-flex align-items-center gap-3">
-          <div class="avatar d-flex align-items-center justify-content-center mb-3 mb-lg-0">LM</div>
-          <div>
-            <h1 class="h3 mb-1">Lucía Martínez</h1>
-            <p class="mb-3 mb-lg-0">Estudiante de Sistemas</p>
+      <section class="bg-primary text-white rounded-4 shadow p-4 mt-4 mt-lg-5 mb-4">
+        <div class="d-flex align-items-start gap-3 gap-lg-4">
+          <div class="avatar-68 rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold fs-4 shadow-sm flex-shrink-0">VG</div>
+          <div class="flex-grow-1">
+            <h1 class="text-white h3 fw-bolder lh-sm mb-2">Valentina González</h1>
+            <p class="text-white small mb-3">Estudiante de 4° año · Licenciatura en Finanzas</p>
+            <div class="d-flex align-items-center gap-3">
+              <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle px-4 py-2 fw-semibold">Disponible</span>
+              <a class="btn btn-light btn-sm text-primary d-md-none ms-auto" href="#">Editar perfil</a>
+            </div>
           </div>
-          <span class="chip active ms-lg-auto">Disponible</span>
-          <a class="btn btn-outline-primary ms-lg-3 mt-3 mt-lg-0" href="#">Editar perfil</a>
         </div>
       </section>
 
       <div class="row g-4">
+        <div class="col-lg-8">
+          <section class="card border rounded-4 shadow-sm bg-white h-100">
+            <div class="card-body p-4">
+              <h2 class="h3 mb-1">Perfil</h2>
+              <p class="text-body-secondary mb-4">Vista pública resumida que verán las empresas al revisar tu postulación.</p>
+              <div class="d-flex flex-column flex-md-row align-items-start gap-3">
+                <div class="avatar-68 rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold fs-4 shadow-sm flex-shrink-0">VG</div>
+                <div class="flex-grow-1">
+                  <h3 class="h4 mb-1">Valentina González</h3>
+                  <p class="fw-semibold text-body mb-3">Licenciatura en Finanzas · 4° año</p>
+                  <p class="text-body-secondary mb-4">Busco mi primera experiencia profesional en finanzas corporativas, reporting y análisis de datos. Me interesa incorporarme a equipos con foco en aprendizaje y crecimiento.</p>
+                  <div class="d-flex flex-wrap gap-3">
+                    <span class="badge rounded-pill text-primary bg-white border border-primary-subtle px-4 py-2 fw-semibold">Finanzas</span>
+                    <span class="badge rounded-pill text-primary bg-white border border-primary-subtle px-4 py-2 fw-semibold">Excel</span>
+                    <span class="badge rounded-pill text-primary bg-white border border-primary-subtle px-4 py-2 fw-semibold">Power BI</span>
+                    <span class="badge rounded-pill bg-success-subtle text-success border border-success-subtle px-4 py-2 fw-semibold">Part-time</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-lg-4">
+          <section class="card border rounded-4 shadow-sm bg-white h-100">
+            <div class="card-body p-4 d-flex flex-column">
+              <h2 class="h3 mb-2">Carga de CV</h2>
+              <p class="text-body-secondary mb-4">Carga tu CV en formato PDF.</p>
+              <hr class="my-0">
+              <div class="py-3">
+                <p class="small text-body-secondary mb-1">CV seleccionado</p>
+                <p class="fw-bold mb-1">CV_Valentina_Gonzalez.pdf</p>
+                <p class="small text-body-secondary mb-0">Actualizado el 12/05/2026</p>
+              </div>
+              <a class="btn btn-primary align-self-center px-5 mt-auto" href="cv.html">Subir CV</a>
+            </div>
+          </section>
+        </div>
         <div class="col-lg-6">
-          <section class="card soft-card h-100">
+          <section class="card border rounded-4 shadow-sm bg-white h-100">
             <div class="card-body p-4">
               <h2 class="h4 mb-4">Datos personales</h2>
               <label class="form-label" for="profile-name">Nombre</label>
-              <input class="form-control mb-3" id="profile-name" value="Lucía Martínez">
+              <input class="form-control mb-3" id="profile-name" value="Valentina González">
               <label class="form-label" for="profile-email">Mail institucional</label>
-              <input class="form-control mb-3" id="profile-email" type="email" value="lucia.martinez@ujim.edu.ar">
+              <input class="form-control mb-3" id="profile-email" type="email" value="valentina.gonzalez@ujim.edu.ar">
               <label class="form-label" for="profile-phone">Teléfono</label>
               <input class="form-control mb-4" id="profile-phone" value="+54 11 5555 1020">
               <button class="btn btn-primary" type="button">Guardar</button>
@@ -57,7 +105,7 @@
           </section>
         </div>
         <div class="col-lg-6">
-          <section class="card soft-card h-100">
+          <section class="card border rounded-4 shadow-sm bg-white h-100">
             <div class="card-body p-4">
               <h2 class="h4 mb-4">Perfil profesional</h2>
               <label class="form-label" for="profile-area">Área objetivo</label>
@@ -73,10 +121,10 @@
       </div>
     </main>
 
-    <footer class="footer-ui">
+    <footer class="bg-primary text-white py-4 py-lg-5">
       <div class="container">
-        <strong>UJIM Empleos</strong>
-        <p>Conecta talento, impulsa futuro</p>
+        <strong class="d-block fw-bold fs-5 lh-sm">UJIM Empleos</strong>
+        <p class="small mb-0 mt-2">Conecta talento, impulsa futuro</p>
       </div>
     </footer>
 
