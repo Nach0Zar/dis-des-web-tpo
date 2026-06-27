@@ -6,66 +6,81 @@
     <title>Mi perfil | UJIM Empleos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <nav class="container-shell navbar navbar-expand-lg">
-        <a class="navbar-brand brand" href="index.html">UJIM Empleos</a>
-        <button class="hamburger-btn d-lg-none" type="button" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-        <div class="d-none d-lg-flex ms-auto align-items-center gap-3">
-          <a class="nav-link" href="empleos.html">Buscar ofertas</a>
-          <a class="btn btn-danger-ui" href="index.html">Cerrar sesión</a>
+    <header class="bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand" href="index.html">UJIM Empleos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#profileNav" aria-controls="profileNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="profileNav">
+          <div class="navbar-nav ms-lg-auto gap-lg-3 py-3 py-lg-0">
+            <a class="nav-link" href="empleos.html">Buscar ofertas</a>
+            <a class="nav-link active" href="perfil.html">Mi perfil</a>
+            <a class="btn btn-outline-danger" href="index.html">Cerrar sesión</a>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="container-shell profile-main">
-      <section class="profile-hero">
-        <div class="avatar">LM</div>
-        <div>
-          <h1>Lucía Martínez</h1>
-          <p>Estudiante de Sistemas</p>
+    <main class="container pb-5">
+      <section class="profile-hero card soft-card">
+        <div class="card-body p-4 d-lg-flex align-items-center gap-3">
+          <div class="avatar d-flex align-items-center justify-content-center mb-3 mb-lg-0">LM</div>
+          <div>
+            <h1 class="h3 mb-1">Lucía Martínez</h1>
+            <p class="mb-3 mb-lg-0">Estudiante de Sistemas</p>
+          </div>
+          <span class="chip active ms-lg-auto">Disponible</span>
+          <a class="btn btn-outline-primary ms-lg-3 mt-3 mt-lg-0" href="#">Editar perfil</a>
         </div>
-        <span class="chip active">Disponible</span>
-        <a class="btn btn-outline-ui ms-lg-auto" href="#">Editar perfil</a>
       </section>
 
       <div class="row g-4">
         <div class="col-lg-6">
-          <section class="form-card profile-card">
-            <h2>Datos personales</h2>
-            <label class="form-label">Nombre</label>
-            <input class="form-control" value="Lucía Martínez">
-            <label class="form-label">Mail institucional</label>
-            <input class="form-control" value="lucia.martinez@ujim.edu.ar">
-            <label class="form-label">Teléfono</label>
-            <input class="form-control" value="+54 11 5555 1020">
-            <button class="btn btn-primary-ui mt-4" type="button">Guardar</button>
+          <section class="card soft-card h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-4">Datos personales</h2>
+              <label class="form-label" for="profile-name">Nombre</label>
+              <input class="form-control mb-3" id="profile-name" value="Lucía Martínez">
+              <label class="form-label" for="profile-email">Mail institucional</label>
+              <input class="form-control mb-3" id="profile-email" type="email" value="lucia.martinez@ujim.edu.ar">
+              <label class="form-label" for="profile-phone">Teléfono</label>
+              <input class="form-control mb-4" id="profile-phone" value="+54 11 5555 1020">
+              <button class="btn btn-primary" type="button">Guardar</button>
+            </div>
           </section>
         </div>
         <div class="col-lg-6">
-          <section class="form-card profile-card">
-            <h2>Perfil profesional</h2>
-            <label class="form-label">Área objetivo</label>
-            <input class="form-control" value="Tecnología">
-            <label class="form-label">Nivel</label>
-            <input class="form-control" value="Pasantía / Junior">
-            <label class="form-label">Modalidad preferida</label>
-            <input class="form-control" value="Remoto o híbrido">
-            <a class="btn btn-primary-ui mt-4" href="cv.html">Subir CV</a>
+          <section class="card soft-card h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-4">Perfil profesional</h2>
+              <label class="form-label" for="profile-area">Área objetivo</label>
+              <input class="form-control mb-3" id="profile-area" value="Tecnología">
+              <label class="form-label" for="profile-level">Nivel</label>
+              <input class="form-control mb-3" id="profile-level" value="Pasantía / Junior">
+              <label class="form-label" for="profile-mode">Modalidad preferida</label>
+              <input class="form-control mb-4" id="profile-mode" value="Remoto o híbrido">
+              <a class="btn btn-primary" href="cv.html">Subir CV</a>
+            </div>
           </section>
         </div>
       </div>
     </main>
 
     <footer class="footer-ui">
-      <div class="container-shell">
+      <div class="container">
         <strong>UJIM Empleos</strong>
         <p>Conecta talento, impulsa futuro</p>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

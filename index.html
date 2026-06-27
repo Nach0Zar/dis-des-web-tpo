@@ -6,73 +6,94 @@
     <title>UJIM Empleos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="landing-page">
-    <header class="site-header">
-      <nav class="container-shell navbar navbar-expand-lg">
-        <a class="navbar-brand brand" href="index.html">UJIM Empleos</a>
-        <button class="hamburger-btn d-lg-none" type="button" aria-label="Abrir menú">
-          <span></span><span></span><span></span>
+  <body>
+    <header class="bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand" href="index.html">UJIM Empleos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#publicNav" aria-controls="publicNav" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="d-none d-lg-flex ms-auto">
-          <a class="btn btn-primary-ui" href="empleos.html">Ingresar</a>
+        <div class="collapse navbar-collapse" id="publicNav">
+          <div class="navbar-nav ms-lg-auto gap-lg-3 py-3 py-lg-0">
+            <a class="nav-link d-lg-none" href="#oportunidades">Oportunidades</a>
+            <a class="nav-link d-lg-none" href="#casos">Casos de éxito</a>
+            <a class="nav-link d-lg-none" href="#contacto">Ayuda</a>
+            <a class="btn btn-primary px-4" href="login.html">Ingresar</a>
+          </div>
         </div>
       </nav>
     </header>
- 
+
     <main>
-      <section class="landing-hero text-white">
-        <div class="container-shell">
-          <div class="row gx-0 gy-5 gx-lg-5 align-items-start">
-            <div class="col-lg-6">
-              <p class="d-block mb-3 fw-bold text-white small">Bolsa de empleo universitaria</p>
-              <h1 class="mb-0 text-white">Conecta talento,<br> impulsa futuro</h1>
-              <p class="hero-copy">
+      <section class="bg-primary text-white py-5">
+        <div class="container">
+          <div class="row g-5 align-items-start py-lg-5">
+            <div class="col-lg-6 d-flex flex-column">
+              <p class="mb-3 fw-bold small">Bolsa de empleo universitaria</p>
+              <h1 class="text-white display-2 fw-bolder mb-0">Conecta talento,<br> impulsa futuro</h1>
+              <p class="lead text-white mb-4 mt-3">
                 <span class="d-none d-lg-inline">Un portal institucional para que estudiantes y graduados de UJIM encuentren pasantías, primeras experiencias y oportunidades laborales verificadas.</span>
                 <span class="d-lg-none">Encontrá pasantías y primeras experiencias verificadas por UJIM.</span>
               </p>
-              <div class="d-flex align-items-center gap-3">
-                <a class="btn btn-hero-primary" href="empleos.html">Buscar ofertas</a>
-                <a class="btn btn-hero-secondary d-none d-lg-inline-flex" href="#contacto">Contactarnos</a>
+              <div class="d-flex gap-3">
+                <a class="btn btn-light text-primary px-4 py-3" href="empleos.html">Buscar ofertas</a>
+                <a class="btn btn-outline-light d-none d-lg-inline-flex px-4 py-3" href="#contacto">Contactarnos</a>
               </div>
             </div>
 
             <div class="col-lg-5 offset-lg-1">
-              <aside class="card hero-preview ms-lg-auto" aria-label="Ofertas destacadas">
-                <div class="card-body">
-                  <h2 class="card-title mb-1">Ofertas destacadas</h2>
-                  <p class="preview-copy d-none d-lg-block mb-4">Información clara para decidir rápido</p>
+              <aside class="card border-0 rounded-4 shadow-lg ms-lg-auto overflow-hidden">
+                <div class="card-body p-4 p-lg-5">
+                  <h2 class="h3 mb-1 fw-semibold">Ofertas destacadas</h2>
+                  <p class="text-body-secondary d-none d-lg-block mb-4">Información clara para decidir rápido</p>
                   <div class="d-grid gap-3">
-                    <article class="mini-offer accent-blue d-lg-flex align-items-center justify-content-between gap-3">
-                      <div>
-                        <span class="company d-none d-lg-block">TechFor SA</span>
-                        <h3 class="d-none d-lg-block">Pasantía Frontend</h3>
-                        <p class="mini-offer-meta d-none d-lg-block">Remoto · CABA</p>
-                        <p class="d-lg-none mb-0 fw-semibold small text-body">Pasantía Frontend · Remoto</p>
+                    <section class="card bg-body-tertiary border rounded-4 accent-strip accent-blue overflow-hidden p-3 ps-4 d-lg-flex align-items-center justify-content-between">
+                      <div class="row w-100">
+                      <div class="col-8 p-0">
+                        <span class="text-body-secondary small d-block fw-bold">TechFor SA</span>
+                        <h3 class="h6 mb-1 d-block">Pasantía Frontend</h3>
+                        <p class="small mb-0 d-block">Remoto · CABA</p>
                       </div>
-                      <span class="badge rounded-pill mini-tag d-none d-lg-inline-flex">Remoto</span>
-                    </article>
-                    <article class="mini-offer accent-teal d-lg-flex align-items-center justify-content-between gap-3">
-                      <div>
-                        <span class="company d-none d-lg-block">FinGroup</span>
-                        <h3 class="d-none d-lg-block">Analista Jr. Finanzas</h3>
-                        <p class="mini-offer-meta d-none d-lg-block">Híbrido · CABA</p>
-                        <p class="d-lg-none mb-0 fw-semibold small text-body">Analista Jr. Finanzas · Híbrido</p>
+                      <div class="col-4 p-0 d-flex justify-content-center align-items-center">
+                        <div>
+                          <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle d-none d-lg-inline-flex px-3 py-2">Remoto</span>
+                        </div>
                       </div>
-                      <span class="badge rounded-pill mini-tag d-none d-lg-inline-flex">Híbrido</span>
-                    </article>
-                    <article class="mini-offer accent-orange d-lg-flex align-items-center justify-content-between gap-3">
-                      <div>
-                        <span class="company d-none d-lg-block">DataSoft</span>
-                        <h3 class="d-none d-lg-block">Soporte IT Jr.</h3>
-                        <p class="mini-offer-meta d-none d-lg-block">Presencial · Buenos Aires</p>
-                        <p class="d-lg-none mb-0 fw-semibold small text-body">Soporte IT Jr. · Presencial</p>
                       </div>
-                      <span class="badge rounded-pill mini-tag d-none d-lg-inline-flex">IT</span>
-                    </article>
+                    </section>
+                    <section class="card bg-body-tertiary border rounded-4 accent-strip accent-teal overflow-hidden p-3 ps-4 d-lg-flex align-items-center justify-content-between">
+                      <div class="row w-100">
+                        <div class="col-8 p-0">
+                          <span class="text-body-secondary small d-block fw-bold">FinGroup</span>
+                          <h3 class="h6 mb-1 d-block">Analista Jr. Finanzas</h3>
+                          <p class="small mb-0 d-block">Híbrido · CABA</p>
+                        </div>
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center">
+                          <div>
+                            <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle d-none d-lg-inline-flex px-3 py-2">Híbrido</span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="card bg-body-tertiary border rounded-4 accent-strip accent-orange overflow-hidden p-3 ps-4 d-lg-flex align-items-center justify-content-between">
+                      <div class="row w-100">
+                        <div class="col-8 p-0">
+                          <span class="text-body-secondary small d-block fw-bold">DataSoft</span>
+                          <h3 class="h6 mb-1 d-block">Soporte IT Jr.</h3>
+                          <p class="small mb-0 d-block">Presencial · Buenos Aires</p>
+                        </div>
+                        <div class="col-4 p-0 d-flex justify-content-center align-items-center">
+                          <div>
+                            <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle d-none d-lg-inline-flex px-3 py-2">IT</span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </div>
               </aside>
@@ -81,46 +102,34 @@
         </div>
       </section>
 
-      <section class="success-section" id="casos">
-        <div class="container-shell">
-          <div class="success-strip card border-0">
-            <div class="card-body">
-              <div class="row gx-0 gy-4 gx-lg-4 align-items-center">
+      <section id="casos" class="pb-5">
+        <div class="container">
+          <div class="card border-0 rounded-4 shadow hero-overlap">
+            <div class="card-body p-4 p-lg-5">
+              <div class="row g-4 align-items-center">
                 <div class="col-lg-4">
-                  <h2 class="mb-2">
-                    <span class="d-none d-lg-inline">Indicadores de éxito del portal</span>
-                    <span class="d-lg-none">Indicadores de éxito</span>
-                  </h2>
+                  <h2 class="h4 mb-2">Indicadores de éxito del protal</h2>
                   <p class="d-none d-lg-block mb-0">Métricas objetivo para evaluar adopción, eficiencia y confianza en la experiencia.</p>
                 </div>
                 <div class="col-lg-8">
-                  <div class="row gx-0 gy-3 gx-lg-4">
+                  <div class="row g-3">
                     <div class="col-lg-4">
-                      <article class="success-card h-100 d-flex d-lg-block align-items-center gap-3">
-                        <strong>+20%</strong>
-                        <div>
-                          <span>Postulaciones activas</span>
-                          <p class="d-none d-lg-block">Meta de incremento en postulaciones</p>
-                        </div>
-                      </article>
+                      <section class="card h-100 border rounded-4 p-3 d-flex flex-row justify-content-evenly d-lg-block align-items-center gap-3">
+                        <strong class="display-6 fw-bolder text-primary">+20%</strong>
+                        <div><span class="fw-semibold fs-5">Postulaciones activas</span><p class="small d-none d-lg-block mb-0">Meta de incremento en postulaciones</p></div>
+                      </section>
                     </div>
                     <div class="col-lg-4">
-                      <article class="success-card h-100 d-flex d-lg-block align-items-center gap-3">
-                        <strong>-35%</strong>
-                        <div>
-                          <span>Tiempo de búsqueda</span>
-                          <p class="d-none d-lg-block">Menos fricción para encontrar ofertas</p>
-                        </div>
-                      </article>
+                      <section class="card h-100 border rounded-4 p-3 d-flex flex-row justify-content-evenly d-lg-block align-items-center gap-3">
+                        <strong class="display-6 fw-bolder text-primary">-35%</strong>
+                        <div><span class="fw-semibold fs-5">Tiempo de búsqueda</span><p class="small d-none d-lg-block mb-0">Menos fricción para encontrar ofertas</p></div>
+                      </section>
                     </div>
                     <div class="col-lg-4">
-                      <article class="success-card h-100 d-flex d-lg-block align-items-center gap-3">
-                        <strong>80%</strong>
-                        <div>
-                          <span>Satisfacción UX</span>
-                          <p class="d-none d-lg-block">Percepción clara, moderna y confiable</p>
-                        </div>
-                      </article>
+                      <section class="card h-100 border rounded-4 p-3 d-flex flex-row justify-content-evenly d-lg-block align-items-center gap-3">
+                        <strong class="display-6 fw-bolder text-primary">80%</strong>
+                        <div><span class="fw-semibold fs-5">Satisfacción UX</span><p class="small d-none d-lg-block mb-0">Percepción clara, moderna y confiable</p></div>
+                      </section>
                     </div>
                   </div>
                 </div>
@@ -130,104 +139,99 @@
         </div>
       </section>
 
-      <section class="cta-band bg-white" id="oportunidades">
-        <div class="container-shell">
-          <div class="row gx-0 gy-5 gx-lg-5 align-items-start">
+      <section id="oportunidades" class="py-5 bg-white">
+        <div class="container">
+          <div class="row g-5 align-items-start">
             <div class="col-lg-7">
-              <p class="section-pill">Call to action</p>
-              <h2 class="mb-0">
-                <span class="d-none d-lg-inline">Empezá tu búsqueda profesional con el respaldo de UJIM</span>
-                <span class="d-lg-none">Empezá tu búsqueda con respaldo UJIM</span>
-              </h2>
-              <p class="cta-copy mb-0">Ingresá con tu correo institucional y encontrá oportunidades pensadas para tu carrera, tu disponibilidad y tus primeros pasos en el mundo laboral.</p>
-              <a class="btn btn-primary-ui d-inline-flex d-lg-none mt-3" href="empleos.html">Iniciar sesión</a>
+              <p class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle fw-bold px-3 py-2 mb-3">Call to action</p>
+              <h2 class="display-6 fw-bold mb-3">Empezá tu búsqueda profesional con el respaldo de UJIM</h2>
+              <p class="mb-0">Ingresá con tu correo institucional y encontrá oportunidades pensadas para tu carrera, tu disponibilidad y tus primeros pasos en el mundo laboral.</p>
+              <a class="btn btn-primary mt-3 d-lg-none" href="login.html">Iniciar sesión</a>
             </div>
             <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
-              <aside class="cta-card">
-                <h3>Acceso institucional</h3>
-                <p>Disponible para estudiantes y graduados con mail @ujim.edu.ar.</p>
-                <a class="btn btn-primary-ui" href="empleos.html">Iniciar sesión</a>
+              <aside class="card border rounded-4 shadow-sm bg-primary-subtle border-primary-subtle">
+                <div class="card-body p-4">
+                  <h3 class="h3">Acceso institucional</h3>
+                  <p>Disponible para estudiantes y graduados con mail @ujim.edu.ar.</p>
+                  <a class="btn btn-primary" href="login.html">Iniciar sesión</a>
+                </div>
               </aside>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about-section">
-        <div class="container-shell">
-          <div class="row gx-0 gy-4 gx-lg-4 align-items-start">
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-5 align-items-start">
             <div class="col-lg-5 offset-lg-1">
-              <p class="section-pill">About us</p>
-              <h2 class="mb-0">
-                <span class="d-none d-lg-inline">Una universidad que conecta formación académica con futuro profesional</span>
-                <span class="d-lg-none">UJIM y el futuro profesional</span>
-              </h2>
-              <div class="logo-panel">
-                <div class="ujim-logo-mark mx-auto" aria-hidden="true">
-                  <span class="university-seal">U</span>
-                  <strong>UJIM</strong>
-                  <small>Innovar para transformar</small>
+              <p class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle fw-bold px-3 py-2 mb-3">About us</p>
+              <h2 class="display-6 fw-bolder mb-4">Una universidad que conecta formación académica con futuro profesional</h2>
+              <div class="card border rounded-4 shadow-sm bg-white">
+                <div class="card-body p-4 text-center">
+                  <div class="d-inline-flex flex-column align-items-center justify-content-center bg-primary text-white rounded-4 p-5 mx-auto mb-3">
+                    <span class="fs-4 fw-bold">U</span>
+                    <strong>UJIM</strong>
+                    <small class="small">Innovar para transformar</small>
+                  </div>
+                  <p class="d-none d-lg-block mb-0 text-primary fw-semibold">Universidad Jóvenes Innovadores del Mundo</p>
                 </div>
-                <p class="d-none d-lg-block mb-0">Universidad Jóvenes Innovadores del Mundo</p>
               </div>
             </div>
             <div class="col-lg-6">
-              <article class="history-panel">
-                <h3 class="d-none d-lg-block">Historia y propósito institucional</h3>
-                <div class="d-none d-lg-block">
+              <section class="card border rounded-4 shadow-sm bg-white">
+                <div class="card-body p-4 p-lg-5">
+                  <h3 class="h4 d-none d-lg-block">Historia y propósito institucional</h3>
                   <p>UJIM acompaña la trayectoria académica y profesional de sus estudiantes desde una mirada práctica, moderna y cercana al mercado laboral. El portal de empleos fortalece ese vínculo al centralizar oportunidades, pasantías y contactos con empresas en un entorno institucional confiable.</p>
-                  <p>La bolsa de empleo busca transformar la experiencia laboral inicial en un proceso más claro, accesible y organizado para toda la comunidad universitaria.</p>
+                  <p class="mb-0">La bolsa de empleo busca transformar la experiencia laboral inicial en un proceso más claro, accesible y organizado para toda la comunidad universitaria.</p>
                 </div>
-                <p class="d-lg-none mb-0">UJIM acompaña la trayectoria académica y profesional con oportunidades, pasantías y vínculos con empresas en un entorno institucional confiable.</p>
-              </article>
+              </section>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="contact-section" id="contacto">
-        <div class="container-shell">
-          <div class="row gx-0 gy-5 gx-lg-5 align-items-start">
+      <section id="contacto" class="py-5 bg-white">
+        <div class="container">
+          <div class="row g-5 align-items-start">
             <div class="col-lg-5">
-              <p class="section-pill">Contactanos</p>
-              <h2 class="mb-0">
-                <span class="d-none d-lg-inline">¿Tenés consultas sobre el portal?</span>
-                <span class="d-lg-none">Envianos tu consulta</span>
-              </h2>
-              <p class="contact-intro d-none d-lg-block">Completá el formulario y el área de Desarrollo Profesional responderá tu consulta por mail.</p>
-              <div class="info-card d-none d-lg-block">
-                <h3>Canal institucional</h3>
-                <p>Para consultas de acceso, recuperación de cuenta, ofertas publicadas o seguimiento de postulaciones.</p>
-                <a href="mailto:desarrollo.profesional@ujim.edu.ar">desarrollo.profesional@ujim.edu.ar</a>
+              <p class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle fw-bold px-3 py-2 mb-3">Contactanos</p>
+              <h2 class="display-5 fw-bolder mb-3">¿Tenés consultas sobre el portal?</h2>
+              <p class="d-none d-lg-block">Completá el formulario y el área de Desarrollo Profesional responderá tu consulta por mail.</p>
+              <div class="card border rounded-4 shadow-sm bg-primary-subtle border-primary-subtle d-none d-lg-block mt-5">
+                <div class="card-body p-4">
+                  <h3 class="h5">Canal institucional</h3>
+                  <p>Para consultas de acceso, recuperación de cuenta, ofertas publicadas o seguimiento de postulaciones.</p>
+                  <a class="fw-bold text-primary" href="mailto:desarrollo.profesional@ujim.edu.ar">desarrollo.profesional@ujim.edu.ar</a>
+                </div>
               </div>
             </div>
             <div class="col-lg-6 offset-lg-1">
-              <form class="form-card contact-form">
-                <h3 class="d-none d-lg-block">Enviar consulta</h3>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <label class="form-label mt-0">Nombre y apellido</label>
-                    <input class="form-control" type="text" placeholder="Tu nombre completo">
+              <form class="card border rounded-4 shadow-sm bg-white" data-contact-form>
+                <div class="card-body p-4 p-lg-5">
+                  <h3 class="h4 d-none d-lg-block mb-4">Enviar consulta</h3>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-name">Nombre y apellido</label>
+                      <input class="form-control" id="contact-name" type="text" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="contact-email">Correo institucional</label>
+                      <input class="form-control" id="contact-email" type="email" placeholder="nombre.apellido@ujim.edu.ar" pattern=".+@ujim\.edu\.ar" required>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="contact-subject">Asunto</label>
+                      <input class="form-control" id="contact-subject" type="text" placeholder="Ej: No puedo acceder al portal" required>
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="contact-message">Mensaje</label>
+                      <textarea class="form-control" id="contact-message" rows="4" placeholder="Escribí tu consulta..." required></textarea>
+                    </div>
                   </div>
-                  <div class="col-md-6">
-                    <label class="form-label mt-0">Correo institucional</label>
-                    <input class="form-control" type="email" placeholder="nombre.apellido@ujim.edu.ar">
+                  <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mt-4">
+                    <button class="btn btn-primary px-4" type="submit">Enviar consulta</button>
+                    <span class="small text-body-secondary d-none d-lg-inline">Responderemos al mail institucional indicado.</span>
                   </div>
-                  <div class="col-12">
-                    <label class="form-label mt-0">Asunto</label>
-                    <input class="form-control" type="text" placeholder="Ej: No puedo acceder al portal">
-                  </div>
-                  <div class="col-12">
-                    <label class="form-label mt-0">Mensaje</label>
-                    <textarea class="form-control" rows="4" placeholder="Escribí tu consulta..."></textarea>
-                  </div>
-                </div>
-                <div class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mt-4">
-                  <button class="btn btn-primary-ui contact-submit" type="button">
-                    <span class="d-none d-lg-inline">Enviar consulta</span>
-                    <span class="d-lg-none">Enviar</span>
-                  </button>
-                  <span class="form-helper d-none d-lg-inline">Responderemos al mail institucional indicado.</span>
                 </div>
               </form>
             </div>
@@ -236,11 +240,42 @@
       </section>
     </main>
 
-    <footer class="footer-ui">
-      <div class="container-shell">
-        <strong>UJIM Empleos</strong>
-        <p>Conecta talento, impulsa futuro</p>
+    <footer class="bg-primary text-white py-4 py-lg-5">
+      <div class="container">
+        <strong class="fw-bold fs-4 mb-1 d-block">UJIM Empleos</strong>
+        <p class="small mb-0">Conecta talento, impulsa futuro</p>
       </div>
     </footer>
+
+    <div class="modal fade" id="contactSentModal" tabindex="-1" aria-labelledby="contactSentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-body p-4 p-lg-5">
+            <div class="rounded-circle d-inline-flex align-items-center justify-content-center bg-success-subtle text-success border border-success-subtle p-3 mx-auto mb-3">
+              <i class="bi bi-check-lg fs-4"></i>
+            </div>
+            <h2 id="contactSentTitle" class="h3">Consulta enviada</h2>
+            <p>Recibimos tu mensaje. El área de Desarrollo Profesional responderá al correo institucional indicado.</p>
+            <button class="btn btn-primary w-100" type="button" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      const contactForm = document.querySelector("[data-contact-form]");
+      const contactModal = new bootstrap.Modal(document.querySelector("#contactSentModal"));
+
+      contactForm?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
+        contactModal.show();
+      });
+    </script>
   </body>
 </html>
