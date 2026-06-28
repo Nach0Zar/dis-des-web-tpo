@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buscar ofertas | UJIM Empleos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
+  <body>
+    <header class="bg-white border-bottom">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">UJIM Empleos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#authNav" aria-controls="authNav" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="authNav">
+            <div class="navbar-nav mx-xl-auto gap-xl-2 py-3 py-xl-0">
+              <a class="nav-link active border-bottom border-4 border-primary" href="empleos.html">Buscar ofertas</a>
+              <a class="nav-link" href="postulaciones.html">Mis postulaciones</a>
+              <a class="nav-link" href="casos-exito.html">Casos de éxito</a>
+              <a class="nav-link" href="faqs.html">FAQs</a>
+              <a class="nav-link" href="info-legal.html">Info legal</a>
+            </div>
+            <div class="d-grid d-xl-flex gap-2">
+              <a class="btn btn-outline-primary" href="perfil.html">Mi perfil</a>
+              <a class="btn btn-outline-danger" href="../index.html">Cerrar sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container pb-5">
+      <section class="bg-primary-subtle rounded-4 shadow p-4 p-lg-5 mt-4 mt-lg-5">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bolder lh-sm mb-3">Conecta talento, impulsa futuro</h1>
+            <p class="mb-0 text-primary">Encontrá pasantías y primeras experiencias laborales seleccionadas para estudiantes y graduados de UJIM.</p>
+          </div>
+          <div class="col-lg-6">
+            <form class="w-100 ms-lg-auto" data-job-search-form>
+              <div class="input-group bg-white p-3 rounded-4 shadow-sm">
+                <span class="rounded-circle d-inline-flex align-items-center justify-content-center me-2 bg-body-tertiary border text-primary p-2"><i class="bi bi-search px-2"></i></span>
+                <input class="form-control border-0 rounded-3 shadow-none" id="jobSearchInput" type="search" placeholder="Buscar por rol, empresa o tecnología" aria-label="Buscar ofertas" data-job-search-input>
+                <button class="btn btn-primary d-none d-lg-inline-flex" type="submit">Buscar</button>
+              </div>
+              <div class="d-none d-lg-flex flex-wrap gap-2 mt-3">
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="d-lg-none mt-4">
+        <h2 class="h5">Filtros rápidos</h2>
+        <div class="d-flex gap-2 pb-2 overflow-x-auto flex-nowrap">
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button>
+        </div>
+        <button class="btn btn-outline-primary w-100 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtersOffcanvas" aria-controls="filtersOffcanvas">Más filtros</button>
+      </section>
+
+      <div class="row g-4 mt-4">
+        <aside class="col-lg-3 d-none d-lg-block">
+          <div class="card border rounded-4 shadow-sm bg-white h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-4">Filtros</h2>
+              <div class="mb-4">
+                <h3 class="h6">Modalidad</h3>
+                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button></div>
+              </div>
+              <div class="mb-4">
+                <h3 class="h6">Área</h3>
+                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="tecnologia" aria-pressed="false">Tecnología</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="finanzas" aria-pressed="false">Finanzas</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="marketing" aria-pressed="false">Marketing</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="administracion" aria-pressed="false">Administración</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="legal" aria-pressed="false">Legal</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="diseno" aria-pressed="false">Diseño</button></div>
+              </div>
+              <div class="mb-4">
+                <h3 class="h6">Nivel de experiencia</h3>
+                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="junior" aria-pressed="false">Junior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="semi-senior" aria-pressed="false">Semi senior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="senior" aria-pressed="false">Senior</button></div>
+              </div>
+              <div class="mb-4">
+                <h3 class="h6">Fecha de publicación</h3>
+                <select class="form-select form-select-sm" data-filter-date aria-label="Fecha de publicación">
+                  <option value="">Cualquier fecha</option>
+                  <option value="1">Últimas 24 horas</option>
+                  <option value="7">Últimos 7 días</option>
+                  <option value="15">Últimos 15 días</option>
+                  <option value="30">Últimos 30 días</option>
+                </select>
+              </div>
+              <div class="d-flex gap-3 pt-4">
+                <button class="btn btn-primary" type="button" data-filter-apply>Aplicar</button>
+                <button class="btn btn-outline-primary" type="button" data-filter-clear>Limpiar</button>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="col-lg-9">
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <h2 class="h3 mb-0">Ofertas destacadas</h2>
+            <div class="d-flex flex-wrap align-items-center gap-3 small text-body-secondary" role="group" aria-label="Referencia de color por modalidad">
+              <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background: var(--mod-remoto);"></span> Remoto</span>
+              <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background: var(--mod-hibrido);"></span> Híbrido</span>
+              <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background: var(--mod-presencial);"></span> Presencial</span>
+            </div>
+          </div>
+          <p class="text-body-secondary mt-2" data-job-results-summary>Resultados con información clave visible para decidir rápido.</p>
+          <div class="row g-4" data-job-results>
+            <div class="col-lg-6" data-job-card data-modalidad="remoto" data-area="tecnologia" data-nivel="pasantia" data-dias="1">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-remoto">
+                <span class="small text-body-secondary">TechFor SA</span>
+                <h3 class="h5 fw-bold text-primary">Pasantía Frontend</h3>
+                <p class="mb-3 text-body-secondary">CABA / Remoto · Remoto</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">HTML + CSS</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="finanzas" data-nivel="junior" data-dias="5">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
+                <span class="small text-body-secondary">FinGroup</span>
+                <h3 class="h5 fw-bold text-primary">Analista Jr. Finanzas</h3>
+                <p class="mb-3 text-body-secondary">CABA · Híbrido</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Excel</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6" data-job-card data-modalidad="presencial" data-area="tecnologia" data-nivel="junior" data-dias="9">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-presencial">
+                <span class="small text-body-secondary">DataSoft</span>
+                <h3 class="h5 fw-bold text-primary">Soporte IT Jr.</h3>
+                <p class="mb-3 text-body-secondary">Buenos Aires · Presencial</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Mesa de ayuda</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="marketing" data-nivel="junior" data-dias="14">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
+                <span class="small text-body-secondary">Market Hub</span>
+                <h3 class="h5 fw-bold text-primary">Asistente Marketing</h3>
+                <p class="mb-3 text-body-secondary">CABA · Híbrido</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Redes</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="marketing" data-nivel="junior" data-dias="20">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
+                <span class="small text-body-secondary">Market Hub</span>
+                <h3 class="h5 fw-bold text-primary">Asistente Marketing Digital</h3>
+                <p class="mb-3 text-body-secondary">CABA · Híbrido</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Redes sociales</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="remoto" data-area="tecnologia" data-nivel="pasantia" data-dias="2">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-remoto">
+                <span class="small text-body-secondary">CloudBase</span>
+                <h3 class="h5 fw-bold text-primary">Pasantía Backend Node.js</h3>
+                <p class="mb-3 text-body-secondary">Córdoba · Remoto</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Node.js + SQL</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="presencial" data-area="administracion" data-nivel="junior" data-dias="6">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-presencial">
+                <span class="small text-body-secondary">RetailPro</span>
+                <h3 class="h5 fw-bold text-primary">Asistente de Logística</h3>
+                <p class="mb-3 text-body-secondary">GBA Norte · Presencial</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">SAP / WMS</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="remoto" data-area="tecnologia" data-nivel="junior" data-dias="11">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-remoto">
+                <span class="small text-body-secondary">Dataviz Co.</span>
+                <h3 class="h5 fw-bold text-primary">Analista de Datos Jr.</h3>
+                <p class="mb-3 text-body-secondary">Rosario · Remoto</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Python + Pandas</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="administracion" data-nivel="pasantia" data-dias="28">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
+                <span class="small text-body-secondary">Nexo Legal</span>
+                <h3 class="h5 fw-bold text-primary">Pasantía Administrativa</h3>
+                <p class="mb-3 text-body-secondary">Mendoza · Híbrido</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Office 365</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+          </div>
+          <div class="alert alert-primary border-primary-subtle rounded-4 mt-4 d-none" role="status" data-job-empty>
+            No encontramos ofertas para esa búsqueda. Probá con otro rol, empresa, modalidad o tecnología.
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="filtersOffcanvas" role="dialog" aria-labelledby="filtersTitle">
+      <div class="offcanvas-header">
+        <h2 class="h5 offcanvas-title" id="filtersTitle">Filtros</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mb-3">
+          <h3 class="h6">Modalidad</h3>
+          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button></div>
+        </div>
+        <div class="mb-3">
+          <h3 class="h6">Área</h3>
+          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="tecnologia" aria-pressed="false">Tecnología</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="finanzas" aria-pressed="false">Finanzas</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="marketing" aria-pressed="false">Marketing</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="administracion" aria-pressed="false">Administración</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="legal" aria-pressed="false">Legal</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="diseno" aria-pressed="false">Diseño</button></div>
+        </div>
+        <div class="mb-3">
+          <h3 class="h6">Nivel de experiencia</h3>
+          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="junior" aria-pressed="false">Junior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="semi-senior" aria-pressed="false">Semi senior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="senior" aria-pressed="false">Senior</button></div>
+        </div>
+        <div class="mb-3">
+          <h3 class="h6">Fecha de publicación</h3>
+          <select class="form-select form-select-sm" data-filter-date aria-label="Fecha de publicación">
+            <option value="">Cualquier fecha</option>
+            <option value="1">Últimas 24 horas</option>
+            <option value="7">Últimos 7 días</option>
+            <option value="15">Últimos 15 días</option>
+            <option value="30">Últimos 30 días</option>
+          </select>
+        </div>
+        <div class="d-flex gap-3">
+          <button class="btn btn-primary flex-grow-1" type="button" data-filter-apply data-bs-dismiss="offcanvas">Aplicar filtros</button>
+          <button class="btn btn-outline-primary" type="button" data-filter-clear>Limpiar</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-primary text-white py-4 py-lg-5">
+      <div class="container">
+        <strong class="d-block fw-bold fs-5 lh-sm">UJIM Empleos</strong>
+        <p class="small mb-0 mt-2">Conecta talento, impulsa futuro</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../assets/js/navbar.js"></script>
+    <script defer src="../assets/js/busqueda-filtros.js"></script>
+  </body>
+</html>

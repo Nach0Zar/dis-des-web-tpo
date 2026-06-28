@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
   </head>
   <body>
     <header class="bg-white border-bottom">
       <nav class="navbar navbar-expand-xl">
         <div class="container">
-          <a class="navbar-brand" href="index.html">UJIM Empleos</a>
+          <a class="navbar-brand" href="../index.html">UJIM Empleos</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#legalNav" aria-controls="legalNav" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,7 +29,7 @@
             </div>
             <div class="d-grid d-xl-flex gap-2">
               <a class="btn btn-outline-primary" href="perfil.html">Mi perfil</a>
-              <a class="btn btn-outline-danger" href="index.html">Cerrar sesión</a>
+              <a class="btn btn-outline-danger" href="../index.html">Cerrar sesión</a>
             </div>
           </div>
         </div>
@@ -50,8 +50,9 @@
           <nav class="card border rounded-4 shadow-sm bg-white" aria-label="Contenido legal">
             <div class="card-body p-4">
               <h2 class="h4 mb-4">Contenido</h2>
-              <div class="nav flex-column gap-2">
-                <a class="nav-link active fw-bold px-0" href="#condiciones">Condiciones del portal</a>
+              <div class="nav flex-column gap-2" id="legalNavContent">
+                <a class="nav-link active px-0" href="#alcance">Alcance institucional</a>
+                <a class="nav-link px-0" href="#condiciones">Condiciones del portal</a>
                 <a class="nav-link px-0" href="#privacidad">Privacidad</a>
                 <a class="nav-link px-0" href="#ofertas">Ofertas publicadas</a>
                 <a class="nav-link px-0" href="#cv-perfil">CV y perfil</a>
@@ -62,7 +63,7 @@
         </aside>
 
         <div class="col-lg-9">
-          <section class="card border rounded-4 shadow-sm bg-primary-subtle border-primary-subtle mb-4 d-none d-lg-block">
+          <section id="alcance" class="card border rounded-4 shadow-sm bg-white legal-section is-active mb-4 d-none d-lg-block">
             <div class="card-body p-4">
               <h2 class="h4">Alcance institucional</h2>
               <p class="mb-0 text-body">El portal centraliza oportunidades y facilita la conexión entre estudiantes, graduados y empresas participantes.</p>
@@ -70,35 +71,35 @@
           </section>
 
           <div class="d-grid gap-4">
-            <section id="condiciones" class="card border rounded-4 shadow-sm bg-white">
+            <section id="condiciones" class="card border rounded-4 shadow-sm bg-white legal-section">
               <div class="card-body p-4">
                 <h2 class="h4">Condiciones del portal</h2>
                 <p class="mb-0 text-body">Información institucional sobre el uso del portal, acceso con cuenta UJIM y buenas prácticas para consultar oportunidades.</p>
               </div>
             </section>
 
-            <section id="privacidad" class="card border rounded-4 shadow-sm bg-white">
+            <section id="privacidad" class="card border rounded-4 shadow-sm bg-white legal-section">
               <div class="card-body p-4">
                 <h2 class="h4">Privacidad</h2>
                 <p class="mb-0 text-body">Resumen de cómo se utilizan los datos cargados para operar postulaciones y facilitar el contacto con empresas.</p>
               </div>
             </section>
 
-            <section id="ofertas" class="card border rounded-4 shadow-sm bg-white">
+            <section id="ofertas" class="card border rounded-4 shadow-sm bg-white legal-section">
               <div class="card-body p-4">
                 <h2 class="h4">Ofertas publicadas</h2>
                 <p class="mb-0 text-body">Criterios generales sobre publicación, vigencia y revisión de oportunidades dentro del portal.</p>
               </div>
             </section>
 
-            <section id="cv-perfil" class="card border rounded-4 shadow-sm bg-white">
+            <section id="cv-perfil" class="card border rounded-4 shadow-sm bg-white legal-section">
               <div class="card-body p-4">
                 <h2 class="h4">CV y perfil</h2>
                 <p class="mb-0 text-body">Información sobre el uso del CV principal y los datos profesionales al momento de postularse.</p>
               </div>
             </section>
 
-            <section id="contacto-legal" class="card border rounded-4 shadow-sm bg-white">
+            <section id="contacto-legal" class="card border rounded-4 shadow-sm bg-white legal-section">
               <div class="card-body p-4">
                 <h2 class="h4">Contacto</h2>
                 <p class="mb-0 text-body">Canal institucional para consultas: <a class="fw-semibold text-primary text-break" href="mailto:desarrollo.profesional@ujim.edu.ar">desarrollo.profesional@ujim.edu.ar</a>. Última actualización: junio 2026.</p>
@@ -116,7 +117,8 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../assets/js/navbar.js"></script>
+    <script defer src="../assets/js/info-legal.js"></script>
   </body>
 </html>
