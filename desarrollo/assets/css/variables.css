@@ -1,10 +1,5 @@
-/* ==========================================================================
-   variables.css — Tokens de diseño UJIM (custom properties)
-   Colores, tipografía y espaciado. Importado por styles.css.
-   Basado en la guía de estilo visual de UJIM.
-   ========================================================================== */
 :root {
-  /* Overrides de Bootstrap (mapean los tokens UJIM a variables --bs-*) */
+  /* Overrides de Bootstrap  */
   --bs-primary: #003366;
   --bs-primary-rgb: 0, 51, 102;
   --bs-primary-bg-subtle: #e9f1fa;
@@ -25,13 +20,13 @@
   --ujim-teal: #0f766e;
   --ujim-orange: #d97706;
 
-  /* Tokens UJIM — Estados (semánticos, según guía de estilo) */
+  /* Tokens UJIM — Estados */
   --ujim-success-bg: #b7e3d4;
   --ujim-success-text: #0f766e;
   --ujim-danger-bg: #fdecec;
   --ujim-danger-text: #b42118;
 
-  /* Tokens UJIM — Espaciado (escala base 4px) */
+  /* Tokens UJIM — Espaciado */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
