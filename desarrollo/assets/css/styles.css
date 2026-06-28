@@ -132,7 +132,6 @@ a {
   --accent: var(--ujim-muted);
 }
 
-/* Franja lateral por modalidad de la oferta (ver guía de estilo). */
 .accent-remoto {
   --accent: var(--mod-remoto);
 }
@@ -149,7 +148,6 @@ a {
   line-height: 1.15;
 }
 
-/* Punto de la leyenda de modalidad en Ofertas destacadas. */
 .legend-dot {
   width: 10px;
   height: 10px;
@@ -169,7 +167,6 @@ a {
   }
 }
 
-/* Card de contenido legal seleccionada (celeste = estado activo). */
 .legal-section {
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
@@ -179,8 +176,6 @@ a {
   border-color: var(--ujim-border-strong) !important;
 }
 
-/* Ícono circular para datos clave del detalle de oferta (guía de estilo:
-   iconografía lineal contenida en un círculo de fondo celeste claro). */
 .info-icon {
   width: 40px;
   height: 40px;

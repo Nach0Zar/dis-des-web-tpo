@@ -1,12 +1,3 @@
-/* busqueda-filtros.js — Página de búsqueda de ofertas.
-   Filtrado real (cliente) de las cards combinando:
-   - Filtros tipo "pill" agrupados (modalidad, área, nivel). Dentro de un grupo
-     suman (OR); entre grupos restringen (AND). Togglables on/off.
-   - Filtro por fecha de publicación (select: últimas 24h / 7 / 15 / 30 días).
-   - Buscador de texto por rol, empresa o tecnología.
-   "Limpiar" desactiva TODOS los filtros sin excepción. Los chips de la barra de
-   búsqueda y los del panel/offcanvas comparten estado (mismo grupo+valor). */
-
 const FILTER_GROUPS = ["modalidad", "area", "nivel"];
 const active = { modalidad: new Set(), area: new Set(), nivel: new Set() };
 
@@ -20,7 +11,6 @@ const summary = document.querySelector("[data-job-results-summary]");
 
 let maxDays = null;
 
-/* Refleja el estado `active` en todos los pills (desktop, mobile y offcanvas). */
 function renderPills() {
   allPills.forEach((pill) => {
     const group = pill.dataset.filterGroup;
@@ -73,7 +63,6 @@ allPills.forEach((pill) => {
 dateSelects.forEach((select) => {
   select.addEventListener("change", () => {
     maxDays = select.value ? Number(select.value) : null;
-    // Sincroniza ambos selects (panel y offcanvas).
     dateSelects.forEach((other) => {
       other.value = select.value;
     });
@@ -99,6 +88,5 @@ searchForm?.addEventListener("submit", (event) => {
   applyFilters();
 });
 
-// Estado inicial: ningún filtro activo, todas las ofertas visibles.
 renderPills();
 applyFilters();

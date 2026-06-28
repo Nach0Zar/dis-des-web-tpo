@@ -1,4 +1,3 @@
-/* index.js — Landing: formulario de contacto con confirmación por modal. */
 const contactForm = document.querySelector("[data-contact-form]");
 const contactModalEl = document.querySelector("#contactSentModal");
 const contactModal = contactModalEl ? new bootstrap.Modal(contactModalEl) : null;

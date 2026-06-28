@@ -1,4 +1,3 @@
-/* login.js — Toggle de visibilidad de contraseña y submit del login. */
 const passwordInput = document.querySelector("#password");
 const passwordToggle = document.querySelector("[data-password-toggle]");
 const loginForm = document.querySelector("[data-login-form]");

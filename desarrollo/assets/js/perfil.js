@@ -1,6 +1,3 @@
-/* perfil.js — Modal de carga de CV.
-   "Confirmar carga" da feedback (toast de éxito), cierra el modal y refleja el
-   cambio en la UI actualizando el nombre de archivo y la fecha mostrados. */
 const uploadModalEl = document.querySelector("#uploadCvModal");
 const uploadModal = uploadModalEl ? bootstrap.Modal.getOrCreateInstance(uploadModalEl) : null;
 const confirmCvButton = document.querySelector("[data-cv-confirm]");

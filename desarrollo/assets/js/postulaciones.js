@@ -1,16 +1,9 @@
-/* postulaciones.js — Mis postulaciones.
-   - Filtrado real (cliente) por estado y por texto (puesto/empresa).
-   - "Dar de baja" abre un modal de confirmación; al confirmar, se elimina la
-     postulación del historial (tabla desktop + card mobile). */
-
 const searchInput = document.querySelector("[data-applications-search]");
 const statusButtons = document.querySelectorAll("[data-status-filter]");
 const emptyAlert = document.querySelector("[data-applications-empty]");
 
 let currentStatus = "all";
 
-/* Cada postulación tiene 2 representaciones (fila de tabla + card mobile) que
-   comparten data-application-id; se filtran juntas. */
 function getItems() {
   return document.querySelectorAll("[data-application-id]");
 }
@@ -50,7 +43,6 @@ document
   .querySelector("[data-applications-search-form]")
   ?.addEventListener("submit", (event) => event.preventDefault());
 
-/* -------------------------- Dar de baja (confirmar) ----------------------- */
 const dismissModalEl = document.querySelector("#dismissApplicationModal");
 const dismissModal = dismissModalEl ? new bootstrap.Modal(dismissModalEl) : null;
 const confirmButton = document.querySelector("[data-application-confirm]");

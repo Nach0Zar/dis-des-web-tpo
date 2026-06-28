@@ -1,6 +1,3 @@
-/* info-legal.js — Panel "Contenido".
-   Al hacer click en una opción se resalta en celeste la card de referencia
-   correspondiente (estado activo) y se desliza suavemente hacia ella. */
 const legalLinks = document.querySelectorAll("#legalNavContent a[href^='#']");
 const legalSections = document.querySelectorAll(".legal-section");
 

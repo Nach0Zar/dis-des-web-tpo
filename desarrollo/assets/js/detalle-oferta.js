@@ -1,6 +1,3 @@
-/* detalle-oferta.js — Flujo de "Postularme".
-   Ambos botones (hero y card lateral) abren la confirmación; al confirmar se
-   muestra el modal de éxito y los botones pasan a "¡Postulación enviada!". */
 const applyButtons = document.querySelectorAll("[data-offer-apply-action]");
 const confirmModalEl = document.querySelector("#confirmPostulationModal");
 const successModalEl = document.querySelector("#postulationSuccessModal");
@@ -14,8 +11,6 @@ applyButtons.forEach((btn) => {
 });
 
 confirmApplyButton?.addEventListener("click", () => {
-  // Espera a que cierre la confirmación antes de abrir el éxito (evita
-  // solapamiento de backdrops de Bootstrap).
   confirmModalEl?.addEventListener(
     "hidden.bs.modal",
     () => successModal?.show(),
