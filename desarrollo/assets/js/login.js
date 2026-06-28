@@ -7,6 +7,11 @@ passwordToggle?.addEventListener("click", () => {
   const shouldShow = passwordInput.type === "password";
   passwordInput.type = shouldShow ? "text" : "password";
   passwordToggle.textContent = shouldShow ? "Ocultar" : "Mostrar";
+  passwordToggle.setAttribute("aria-pressed", String(shouldShow));
+  passwordToggle.setAttribute(
+    "aria-label",
+    shouldShow ? "Ocultar contraseña" : "Mostrar contraseña"
+  );
 });
 
 loginForm?.addEventListener("submit", (event) => {

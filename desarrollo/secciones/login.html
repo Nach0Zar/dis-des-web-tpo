@@ -11,26 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
   </head>
-  <body class="min-vh-100">
-    <header class="bg-white border-bottom d-lg-none">
-      <nav class="navbar">
-        <div class="container">
-          <a class="navbar-brand text-white" href="../index.html">UJIM Empleos</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#loginMobileNav" aria-controls="loginMobileNav" aria-expanded="false" aria-label="Abrir menú">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="loginMobileNav">
-            <div class="navbar-nav py-3">
-              <a class="nav-link" href="../index.html">Inicio</a>
-              <a class="nav-link" href="empleos.html">Oportunidades</a>
-              <a class="nav-link" href="recuperar.html">Recuperar contraseña</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="container-fluid p-0 bg-body-tertiary overflow-hidden">
+  <body class="min-vh-100 d-flex flex-column">
+    <!-- El Login no lleva navbar (acceso exclusivo, sin navegación general). -->
+    <main class="container-fluid p-0 bg-body-tertiary overflow-hidden flex-grow-1">
       <div class="row g-0">
         <section class="auth-brand col-lg-auto">
           <a class="navbar-brand text-white d-inline-block" href="../index.html">UJIM Empleos</a>
@@ -64,7 +47,7 @@
                 <label class="form-label" for="password">Contraseña</label>
                 <div class="position-relative">
                   <input class="form-control pe-5" id="password" name="password" type="password" placeholder="••••••••" required>
-                  <button class="btn btn-link position-absolute top-50 end-0 translate-middle-y me-3 p-0 fw-bold" type="button" data-password-toggle>Mostrar</button>
+                  <button class="password-toggle position-absolute top-50 end-0 translate-middle-y me-3" type="button" data-password-toggle aria-label="Mostrar contraseña" aria-pressed="false">Mostrar</button>
                 </div>
               </div>
 
@@ -86,7 +69,7 @@
       </div>
     </main>
 
-    <footer class="bg-primary text-white py-4 d-lg-none">
+    <footer class="bg-primary text-white py-4 d-lg-none mt-auto">
       <div class="container">
         <strong class="fw-bold fs-4 mb-1 d-block">UJIM Empleos</strong>
         <p class="small mb-0">Conecta talento, impulsa futuro</p>

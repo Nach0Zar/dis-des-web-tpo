@@ -43,12 +43,6 @@
           <span class="d-none d-lg-inline">Encontrá respuestas sobre postulaciones, CV, empresas y seguimiento de oportunidades.</span>
           <span class="d-lg-none">Respuestas rápidas sobre el uso del portal.</span>
         </p>
-        <form class="col-lg-6" role="search">
-          <div class="input-group bg-white border rounded-4 shadow-sm overflow-hidden">
-            <span class="input-group-text bg-white border-0 text-primary fw-bold">Buscar</span>
-            <input class="form-control border-0 shadow-none" type="search" placeholder="Buscar una pregunta..." aria-label="Buscar una pregunta">
-          </div>
-        </form>
       </section>
 
       <div class="row g-4 align-items-start">
@@ -57,11 +51,12 @@
             <div class="card-body p-4">
               <h2 class="h4 mb-4">Categorías</h2>
               <div class="d-grid gap-3">
-                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">Cuenta y acceso</button>
-                <button class="btn btn-sm rounded-pill btn-primary" type="button">Postulaciones</button>
-                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">CV y perfil</button>
-                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">Empresas y ofertas</button>
-                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button">Soporte</button>
+                <button class="btn btn-sm rounded-pill btn-primary" type="button" data-faq-filter="todas" aria-pressed="true">Todas</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-faq-filter="cuenta" aria-pressed="false">Cuenta y acceso</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-faq-filter="postulaciones" aria-pressed="false">Postulaciones</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-faq-filter="cv" aria-pressed="false">CV y perfil</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-faq-filter="empresas" aria-pressed="false">Empresas y ofertas</button>
+                <button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-faq-filter="soporte" aria-pressed="false">Soporte</button>
               </div>
             </div>
           </section>
@@ -69,40 +64,41 @@
 
         <div class="col-lg-9">
           <div class="row g-2 d-lg-none mb-4">
-            <div class="col-6"><button class="btn btn-sm rounded-pill btn-primary w-100" type="button">Postulaciones</button></div>
-            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button">CV y perfil</button></div>
-            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button">Empresas</button></div>
-            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button">Soporte</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-primary w-100" type="button" data-faq-filter="todas" aria-pressed="true">Todas</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button" data-faq-filter="postulaciones" aria-pressed="false">Postulaciones</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button" data-faq-filter="cv" aria-pressed="false">CV y perfil</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button" data-faq-filter="empresas" aria-pressed="false">Empresas</button></div>
+            <div class="col-6"><button class="btn btn-sm rounded-pill btn-outline-primary w-100" type="button" data-faq-filter="soporte" aria-pressed="false">Soporte</button></div>
           </div>
 
           <div class="accordion ujim-accordion" id="faqAccordion">
-            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden" data-faq-category="cuenta empresas">
               <h2 class="accordion-header">
-                <button class="accordion-button fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="false" aria-controls="faqOne">
                   ¿Quiénes pueden usar el portal?
                 </button>
               </h2>
-              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div id="faqOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body pt-0">
                   Estudiantes y graduados con cuenta institucional pueden acceder a oportunidades publicadas por empresas vinculadas a UJIM.
                 </div>
               </div>
             </section>
 
-            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden" data-faq-category="postulaciones">
               <h2 class="accordion-header">
-                <button class="accordion-button fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="true" aria-controls="faqTwo">
+                <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
                   ¿Cómo me postulo a una oferta?
                 </button>
               </h2>
-              <div id="faqTwo" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                 <div class="accordion-body pt-0">
                   Ingresá al detalle de la oferta, revisá los requisitos y presioná Postularme. Se enviará tu CV principal cargado en el perfil.
                 </div>
               </div>
             </section>
 
-            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden" data-faq-category="cv">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
                   ¿Puedo editar mi CV después de postularme?
@@ -115,7 +111,7 @@
               </div>
             </section>
 
-            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden" data-faq-category="postulaciones">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqFour" aria-expanded="false" aria-controls="faqFour">
                   ¿Dónde veo el estado de mis postulaciones?
@@ -128,7 +124,7 @@
               </div>
             </section>
 
-            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden" data-faq-category="postulaciones">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqFive" aria-expanded="false" aria-controls="faqFive">
                   ¿Cómo doy de baja una postulación?
@@ -141,7 +137,7 @@
               </div>
             </section>
 
-            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden">
+            <section class="accordion-item border rounded-4 shadow-sm bg-white mb-3 overflow-hidden" data-faq-category="soporte">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold text-primary bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#faqSix" aria-expanded="false" aria-controls="faqSix">
                   ¿Cómo contacto a soporte?

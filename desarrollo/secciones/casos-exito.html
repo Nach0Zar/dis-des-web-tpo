@@ -122,23 +122,32 @@
           </h2>
           <p class="text-body-secondary mb-4 d-none d-lg-block">Compartí tu experiencia para inspirar a otros estudiantes y graduados de UJIM.</p>
 
-          <form>
+          <div class="alert alert-success border-success-subtle rounded-4 d-none" role="alert" data-story-success>
+            <strong class="d-block mb-1">¡Gracias por compartir tu caso!</strong>
+            <span>Recibimos tu testimonio. El equipo de Desarrollo Profesional lo revisará antes de publicarlo.</span>
+          </div>
+
+          <form novalidate data-story-form>
             <div class="row g-3">
               <div class="col-lg-4">
                 <label class="form-label" for="story-name">Nombre y apellido</label>
-                <input class="form-control" id="story-name" type="text" placeholder="Valentina González">
+                <input class="form-control" id="story-name" type="text" placeholder="Valentina González" required>
+                <div class="invalid-feedback">Ingresá tu nombre y apellido.</div>
               </div>
               <div class="col-lg-4">
                 <label class="form-label" for="story-career">Carrera</label>
-                <input class="form-control" id="story-career" type="text" placeholder="Licenciatura en Finanzas">
+                <input class="form-control" id="story-career" type="text" placeholder="Licenciatura en Finanzas" required>
+                <div class="invalid-feedback">Ingresá tu carrera.</div>
               </div>
               <div class="col-lg-4">
                 <label class="form-label" for="story-company">Empresa</label>
-                <input class="form-control" id="story-company" type="text" placeholder="FinGroup">
+                <input class="form-control" id="story-company" type="text" placeholder="FinGroup" required>
+                <div class="invalid-feedback">Ingresá la empresa.</div>
               </div>
               <div class="col-lg-4">
                 <label class="form-label" for="story-type">Tipo de oportunidad</label>
-                <input class="form-control" id="story-type" type="text" placeholder="Pasantía / Empleo / Práctica">
+                <input class="form-control" id="story-type" type="text" placeholder="Pasantía / Empleo / Práctica" required>
+                <div class="invalid-feedback">Indicá el tipo de oportunidad.</div>
               </div>
               <div class="col-lg-2 d-none d-lg-block">
                 <label class="form-label" for="story-year">Año</label>
@@ -149,7 +158,8 @@
                   <span class="d-none d-lg-inline">Testimonio breve</span>
                   <span class="d-lg-none">Testimonio</span>
                 </label>
-                <textarea class="form-control" id="story-testimony" rows="2" placeholder="Contanos cómo el portal te ayudó en tu búsqueda profesional."></textarea>
+                <textarea class="form-control" id="story-testimony" rows="2" placeholder="Contanos cómo el portal te ayudó en tu búsqueda profesional." required></textarea>
+                <div class="invalid-feedback">Contanos brevemente tu experiencia.</div>
               </div>
               <div class="col-lg-4 d-flex align-items-end">
                 <div class="d-grid gap-3 w-100">
@@ -157,7 +167,7 @@
                     <input class="form-check-input" type="checkbox" role="switch" id="story-consent" checked>
                     <label class="form-check-label" for="story-consent">Autorizo publicar mi testimonio</label>
                   </div>
-                  <button class="btn btn-primary w-100" type="button">Enviar caso</button>
+                  <button class="btn btn-primary w-100" type="submit">Enviar caso</button>
                 </div>
               </div>
             </div>

@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -77,6 +82,7 @@ a {
 
 .nav-link.active {
   color: var(--ujim-blue);
+  font-weight: 700;
 }
 
 .footer-ui {
@@ -146,6 +152,10 @@ a {
   --accent: var(--ujim-muted);
 }
 
+.hero-title {
+  line-height: 1.15;
+}
+
 .hero-overlap {
   margin-top: -60px;
 }
@@ -186,7 +196,10 @@ a {
   flex: 0 0 min(44.444vw, 640px);
   width: min(44.444vw, 640px);
   max-width: 640px;
-  height: 100vh;
+  /* height auto + stretch del flex row para que el panel acompañe el alto de
+     la columna del formulario y llegue al margen inferior (no se corta). */
+  height: auto;
+  align-self: stretch;
   min-height: 100vh;
   overflow: visible;
   padding: 64px 72px;
@@ -249,6 +262,30 @@ a {
   max-width: 456px;
 }
 
+/* Toggle "Mostrar/Ocultar" contraseña: consistente con el sistema de diseño,
+   sin el azul subrayado del btn-link nativo. */
+.password-toggle {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ujim-body);
+  font-family: var(--bs-font-sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: var(--ujim-blue);
+}
+
+.password-toggle:focus-visible {
+  outline: 2px solid var(--ujim-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 @media (min-width: 992px) {
   .auth-form-panel {
     padding: 136px 32px 32px clamp(72px, 10.55vw, 152px) !important;
@@ -281,6 +318,12 @@ a {
 }
 
 @media (max-width: 991.98px) {
+
+  /* En mobile el solapamiento del hero deja la card de Ofertas pegada a
+     Indicadores; se reemplaza el margen negativo por separación positiva. */
+  .hero-overlap {
+    margin-top: 24px;
+  }
 
   .auth-brand {
     flex: 0 0 100%;
