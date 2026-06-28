@@ -1,10 +1,25 @@
-/* info-legal.js — Scrollspy del panel "Contenido": marca activo el link de la
-   sección visible y hace scroll suave al hacer click en cada ancla. */
-const legalNav = document.querySelector("#legalNavContent");
+/* info-legal.js — Panel "Contenido".
+   Al hacer click en una opción se resalta en celeste la card de referencia
+   correspondiente (estado activo) y se desliza suavemente hacia ella. */
+const legalLinks = document.querySelectorAll("#legalNavContent a[href^='#']");
+const legalSections = document.querySelectorAll(".legal-section");
 
-if (legalNav && window.bootstrap) {
-  new bootstrap.ScrollSpy(document.body, {
-    target: "#legalNavContent",
-    smoothScroll: true,
+function activateSection(id) {
+  legalSections.forEach((section) => {
+    section.classList.toggle("is-active", section.id === id);
+  });
+  legalLinks.forEach((link) => {
+    link.classList.toggle("active", link.getAttribute("href") === `#${id}`);
   });
 }
+
+legalLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const id = link.getAttribute("href").slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+    activateSection(id);
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});

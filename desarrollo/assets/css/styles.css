@@ -85,25 +85,6 @@ a {
   font-weight: 700;
 }
 
-.footer-ui {
-  min-height: 130px;
-  padding: 36px 0;
-  color: #fff;
-  background: var(--ujim-blue);
-}
-
-.footer-ui strong {
-  display: block;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 22px;
-  line-height: 1.2;
-}
-
-.footer-ui p {
-  margin: 8px 0 0;
-  font-size: 14px;
-}
-
 .form-control,
 .form-select {
   min-height: 48px;
@@ -156,13 +137,40 @@ a {
   line-height: 1.15;
 }
 
-.hero-overlap {
-  margin-top: -60px;
+/* Imagen institucional del bloque About us: recorte consistente y prolijo. */
+.about-image {
+  width: 100%;
+  height: 260px;
 }
 
-.blue-card {
+@media (min-width: 992px) {
+  .about-image {
+    height: 340px;
+  }
+}
+
+/* Card de contenido legal seleccionada (celeste = estado activo). */
+.legal-section {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.legal-section.is-active {
+  background: var(--ujim-soft) !important;
+  border-color: var(--ujim-border-strong) !important;
+}
+
+/* Ícono circular para datos clave del detalle de oferta (guía de estilo:
+   iconografía lineal contenida en un círculo de fondo celeste claro). */
+.info-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  color: var(--ujim-blue);
   background: var(--ujim-soft);
-  border-color: var(--ujim-border-strong);
+}
+
+.hero-overlap {
+  margin-top: -60px;
 }
 
 .avatar-68 {
@@ -292,14 +300,11 @@ a {
   }
 }
 
-.upload-page {
-  min-height: 100vh;
-  background: rgba(0, 0, 0, 0.34);
-}
-
-.upload-sheet {
-  width: min(760px, calc(100% - 40px));
-  border-radius: 24px;
+@media (min-width: 992px) {
+  /* Divisor vertical entre "Datos del CV" y "Archivo" en el modal de carga. */
+  .cv-data-col {
+    border-right: 1px solid var(--ujim-border);
+  }
 }
 
 .drop-zone {
@@ -355,22 +360,6 @@ a {
 
   .auth-form-overlap {
     margin-top: -86px;
-  }
-
-  .footer-ui {
-    min-height: 118px;
-    padding: 22px 0;
-  }
-
-  .upload-page {
-    background: var(--ujim-bg);
-  }
-
-  .upload-sheet {
-    width: 100%;
-    min-height: 769px;
-    margin-top: 30px;
-    border-radius: 24px 24px 0 0;
   }
 }
 
