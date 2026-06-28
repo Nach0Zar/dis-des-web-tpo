@@ -1,22 +1,5 @@
-:root {
-  --bs-primary: #003366;
-  --bs-primary-rgb: 0, 51, 102;
-  --bs-primary-bg-subtle: #e9f1fa;
-  --bs-primary-border-subtle: #c8d8ea;
-  --bs-body-bg: #f5f7fa;
-  --bs-body-color: #4b5563;
-  --bs-font-sans-serif: "Poppins", Arial, sans-serif;
-  --ujim-blue: #003366;
-  --ujim-blue-2: #0a477f;
-  --ujim-bg: #f5f7fa;
-  --ujim-soft: #e9f1fa;
-  --ujim-border: #d9dee7;
-  --ujim-border-strong: #c8d8ea;
-  --ujim-body: #4b5563;
-  --ujim-muted: #6d6d6d;
-  --ujim-teal: #0f766e;
-  --ujim-orange: #d97706;
-}
+/* Tokens de diseño (custom properties). El @import debe ir primero. */
+@import url("variables.css");
 
 * {
   box-sizing: border-box;
