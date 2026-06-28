@@ -132,8 +132,30 @@ a {
   --accent: var(--ujim-muted);
 }
 
+/* Franja lateral por modalidad de la oferta (ver guía de estilo). */
+.accent-remoto {
+  --accent: var(--mod-remoto);
+}
+
+.accent-hibrido {
+  --accent: var(--mod-hibrido);
+}
+
+.accent-presencial {
+  --accent: var(--mod-presencial);
+}
+
 .hero-title {
   line-height: 1.15;
+}
+
+/* Punto de la leyenda de modalidad en Ofertas destacadas. */
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .about-image {

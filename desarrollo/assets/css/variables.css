@@ -26,6 +26,11 @@
   --ujim-danger-bg: #fdecec;
   --ujim-danger-text: #b42118;
 
+  /* Tokens UJIM — Modalidad de oferta (franja lateral de las cards) */
+  --mod-remoto: #003366;      /* = --ujim-blue */
+  --mod-hibrido: #0f766e;     /* = --ujim-teal */
+  --mod-presencial: #d97706;  /* = --ujim-orange */
+
   /* Tokens UJIM — Espaciado */
   --space-1: 4px;
   --space-2: 8px;

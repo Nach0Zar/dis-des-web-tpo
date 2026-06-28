@@ -51,10 +51,10 @@
                 <button class="btn btn-primary d-none d-lg-inline-flex" type="submit">Buscar</button>
               </div>
               <div class="d-none d-lg-flex flex-wrap gap-2 mt-3">
-                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill aria-pressed="false">Remoto</button>
-                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill aria-pressed="false">Híbrido</button>
-                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill aria-pressed="false">Presencial</button>
-                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill aria-pressed="false">Pasantía</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button>
+                <button type="button" class="btn btn-sm rounded-pill btn-outline-primary" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button>
               </div>
             </form>
           </div>
@@ -64,10 +64,10 @@
       <section class="d-lg-none mt-4">
         <h2 class="h5">Filtros rápidos</h2>
         <div class="d-flex gap-2 pb-2 overflow-x-auto flex-nowrap">
-          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill aria-pressed="false">Remoto</button>
-          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill aria-pressed="false">Híbrido</button>
-          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill aria-pressed="false">Presencial</button>
-          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill aria-pressed="false">Pasantía</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button>
+          <button type="button" class="btn btn-sm rounded-pill btn-outline-primary flex-shrink-0" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button>
         </div>
         <button class="btn btn-outline-primary w-100 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#filtersOffcanvas" aria-controls="filtersOffcanvas">Más filtros</button>
       </section>
@@ -79,15 +79,25 @@
               <h2 class="h4 mb-4">Filtros</h2>
               <div class="mb-4">
                 <h3 class="h6">Modalidad</h3>
-                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-primary" type="button" data-filter-pill aria-pressed="true">Remoto</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Híbrido</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Presencial</button></div>
+                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button></div>
               </div>
               <div class="mb-4">
                 <h3 class="h6">Área</h3>
-                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-primary" type="button" data-filter-pill aria-pressed="true">Tecnología</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Finanzas</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Marketing</button></div>
+                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="tecnologia" aria-pressed="false">Tecnología</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="finanzas" aria-pressed="false">Finanzas</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="marketing" aria-pressed="false">Marketing</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="administracion" aria-pressed="false">Administración</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="legal" aria-pressed="false">Legal</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="diseno" aria-pressed="false">Diseño</button></div>
               </div>
               <div class="mb-4">
                 <h3 class="h6">Nivel de experiencia</h3>
-                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-primary" type="button" data-filter-pill aria-pressed="true">Pasantía</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Junior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Senior</button></div>
+                <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="junior" aria-pressed="false">Junior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="semi-senior" aria-pressed="false">Semi senior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="senior" aria-pressed="false">Senior</button></div>
+              </div>
+              <div class="mb-4">
+                <h3 class="h6">Fecha de publicación</h3>
+                <select class="form-select form-select-sm" data-filter-date aria-label="Fecha de publicación">
+                  <option value="">Cualquier fecha</option>
+                  <option value="1">Últimas 24 horas</option>
+                  <option value="7">Últimos 7 días</option>
+                  <option value="15">Últimos 15 días</option>
+                  <option value="30">Últimos 30 días</option>
+                </select>
               </div>
               <div class="d-flex gap-3 pt-4">
                 <button class="btn btn-primary" type="button" data-filter-apply>Aplicar</button>
@@ -98,11 +108,18 @@
         </aside>
 
         <section class="col-lg-9">
-          <h2 class="h3">Ofertas destacadas</h2>
-          <p class="text-body-secondary" data-job-results-summary>Resultados con información clave visible para decidir rápido.</p>
+          <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <h2 class="h3 mb-0">Ofertas destacadas</h2>
+            <div class="d-flex flex-wrap align-items-center gap-3 small text-body-secondary" role="group" aria-label="Referencia de color por modalidad">
+              <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background: var(--mod-remoto);"></span> Remoto</span>
+              <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background: var(--mod-hibrido);"></span> Híbrido</span>
+              <span class="d-flex align-items-center gap-1"><span class="legend-dot" style="background: var(--mod-presencial);"></span> Presencial</span>
+            </div>
+          </div>
+          <p class="text-body-secondary mt-2" data-job-results-summary>Resultados con información clave visible para decidir rápido.</p>
           <div class="row g-4" data-job-results>
-            <div class="col-lg-6" data-job-card>
-              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-blue">
+            <div class="col-lg-6" data-job-card data-modalidad="remoto" data-area="tecnologia" data-nivel="pasantia" data-dias="1">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-remoto">
                 <span class="small text-body-secondary">TechFor SA</span>
                 <h3 class="h5 fw-bold text-primary">Pasantía Frontend</h3>
                 <p class="mb-3 text-body-secondary">CABA / Remoto · Remoto</p>
@@ -112,8 +129,8 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6" data-job-card>
-              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-teal">
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="finanzas" data-nivel="junior" data-dias="5">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
                 <span class="small text-body-secondary">FinGroup</span>
                 <h3 class="h5 fw-bold text-primary">Analista Jr. Finanzas</h3>
                 <p class="mb-3 text-body-secondary">CABA · Híbrido</p>
@@ -123,8 +140,8 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6" data-job-card>
-              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-orange">
+            <div class="col-lg-6" data-job-card data-modalidad="presencial" data-area="tecnologia" data-nivel="junior" data-dias="9">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-presencial">
                 <span class="small text-body-secondary">DataSoft</span>
                 <h3 class="h5 fw-bold text-primary">Soporte IT Jr.</h3>
                 <p class="mb-3 text-body-secondary">Buenos Aires · Presencial</p>
@@ -134,8 +151,8 @@
                 </div>
               </section>
             </div>
-            <div class="col-lg-6" data-job-card>
-              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-gray">
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="marketing" data-nivel="junior" data-dias="14">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
                 <span class="small text-body-secondary">Market Hub</span>
                 <h3 class="h5 fw-bold text-primary">Asistente Marketing</h3>
                 <p class="mb-3 text-body-secondary">CABA · Híbrido</p>
@@ -145,6 +162,67 @@
                 </div>
               </section>
             </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="marketing" data-nivel="junior" data-dias="20">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
+                <span class="small text-body-secondary">Market Hub</span>
+                <h3 class="h5 fw-bold text-primary">Asistente Marketing Digital</h3>
+                <p class="mb-3 text-body-secondary">CABA · Híbrido</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Redes sociales</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="remoto" data-area="tecnologia" data-nivel="pasantia" data-dias="2">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-remoto">
+                <span class="small text-body-secondary">CloudBase</span>
+                <h3 class="h5 fw-bold text-primary">Pasantía Backend Node.js</h3>
+                <p class="mb-3 text-body-secondary">Córdoba · Remoto</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Node.js + SQL</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="presencial" data-area="administracion" data-nivel="junior" data-dias="6">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-presencial">
+                <span class="small text-body-secondary">RetailPro</span>
+                <h3 class="h5 fw-bold text-primary">Asistente de Logística</h3>
+                <p class="mb-3 text-body-secondary">GBA Norte · Presencial</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">SAP / WMS</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="remoto" data-area="tecnologia" data-nivel="junior" data-dias="11">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-remoto">
+                <span class="small text-body-secondary">Dataviz Co.</span>
+                <h3 class="h5 fw-bold text-primary">Analista de Datos Jr.</h3>
+                <p class="mb-3 text-body-secondary">Rosario · Remoto</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Python + Pandas</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-6" data-job-card data-modalidad="hibrido" data-area="administracion" data-nivel="pasantia" data-dias="28">
+              <section class="card h-100 border rounded-4 shadow-sm bg-body-tertiary overflow-hidden position-relative p-3 ps-4 accent-strip accent-hibrido">
+                <span class="small text-body-secondary">Nexo Legal</span>
+                <h3 class="h5 fw-bold text-primary">Pasantía Administrativa</h3>
+                <p class="mb-3 text-body-secondary">Mendoza · Híbrido</p>
+                <div class="d-flex align-items-center justify-content-between gap-3">
+                  <span class="badge rounded-pill text-primary bg-primary-subtle border border-primary-subtle px-3 py-2 fw-bold">Office 365</span>
+                  <a class="btn btn-primary btn-sm" href="detalle-oferta.html">Ver oferta</a>
+                </div>
+              </section>
+            </div>
+
           </div>
           <div class="alert alert-primary border-primary-subtle rounded-4 mt-4 d-none" role="status" data-job-empty>
             No encontramos ofertas para esa búsqueda. Probá con otro rol, empresa, modalidad o tecnología.
@@ -161,15 +239,25 @@
       <div class="offcanvas-body">
         <div class="mb-3">
           <h3 class="h6">Modalidad</h3>
-          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-primary" type="button" data-filter-pill aria-pressed="true">Remoto</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Híbrido</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Presencial</button></div>
+          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="remoto" aria-pressed="false">Remoto</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="hibrido" aria-pressed="false">Híbrido</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="modalidad" data-filter-value="presencial" aria-pressed="false">Presencial</button></div>
         </div>
         <div class="mb-3">
           <h3 class="h6">Área</h3>
-          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-primary" type="button" data-filter-pill aria-pressed="true">Tecnología</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Finanzas</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Marketing</button></div>
+          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="tecnologia" aria-pressed="false">Tecnología</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="finanzas" aria-pressed="false">Finanzas</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="marketing" aria-pressed="false">Marketing</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="administracion" aria-pressed="false">Administración</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="legal" aria-pressed="false">Legal</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="area" data-filter-value="diseno" aria-pressed="false">Diseño</button></div>
         </div>
         <div class="mb-3">
           <h3 class="h6">Nivel de experiencia</h3>
-          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-primary" type="button" data-filter-pill aria-pressed="true">Pasantía</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Junior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill aria-pressed="false">Senior</button></div>
+          <div class="d-flex flex-wrap gap-2"><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="pasantia" aria-pressed="false">Pasantía</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="junior" aria-pressed="false">Junior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="semi-senior" aria-pressed="false">Semi senior</button><button class="btn btn-sm rounded-pill btn-outline-primary" type="button" data-filter-pill data-filter-group="nivel" data-filter-value="senior" aria-pressed="false">Senior</button></div>
+        </div>
+        <div class="mb-3">
+          <h3 class="h6">Fecha de publicación</h3>
+          <select class="form-select form-select-sm" data-filter-date aria-label="Fecha de publicación">
+            <option value="">Cualquier fecha</option>
+            <option value="1">Últimas 24 horas</option>
+            <option value="7">Últimos 7 días</option>
+            <option value="15">Últimos 15 días</option>
+            <option value="30">Últimos 30 días</option>
+          </select>
         </div>
         <div class="d-flex gap-3">
           <button class="btn btn-primary flex-grow-1" type="button" data-filter-apply data-bs-dismiss="offcanvas">Aplicar filtros</button>
